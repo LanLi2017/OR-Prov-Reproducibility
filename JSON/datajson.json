@@ -1,0 +1,634 @@
+[
+  {
+    "id": 1547150762053,
+    "description": "Text transform on 102 cells in column sponsor: value.toLowercase()",
+    "time": "2019-01-10T19:57:04Z",
+    "operation": {
+      "op": "core/text-transform",
+      "description": "Text transform on cells in column sponsor using expression value.toLowercase()",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "sponsor",
+      "expression": "value.toLowercase()",
+      "onError": "set-to-blank",
+      "repeat": false,
+      "repeatCount": 10
+    },
+    "edits": [
+      {
+        "row": "0\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Supper Menu, S. S. Vaderland, March 18th, 1910.\"}\n",
+        "new": "{\"v\":\"supper menu, s. s. vaderland, march 18th, 1910.\"}\n"
+      },
+      {
+        "row": "2\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Moulin\"}\n",
+        "new": "{\"v\":\"moulin\"}\n"
+      },
+      {
+        "row": "3\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"CORTLAND COUNTY SOCIETY OF NEW YORK\"}\n",
+        "new": "{\"v\":\"cortland county society of new york\"}\n"
+      },
+      {
+        "row": "5\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Gramercy Inn; H.R. Weissberg Hotel Corp.\"}\n",
+        "new": "{\"v\":\"gramercy inn; h.r. weissberg hotel corp.\"}\n"
+      },
+      {
+        "row": "6\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Bethlehem Steel Club\"}\n",
+        "new": "{\"v\":\"bethlehem steel club\"}\n"
+      },
+      {
+        "row": "7\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"SUMMIT HOUSE\"}\n",
+        "new": "{\"v\":\"summit house\"}\n"
+      },
+      {
+        "row": "8\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"The Ambassador\"}\n",
+        "new": "{\"v\":\"the ambassador\"}\n"
+      },
+      {
+        "row": "9\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Cavanagh's\"}\n",
+        "new": "{\"v\":\"cavanagh's\"}\n"
+      },
+      {
+        "row": "10\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"TOYO KISEN KAISHA\"}\n",
+        "new": "{\"v\":\"toyo kisen kaisha\"}\n"
+      },
+      {
+        "row": "11\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Hotel Astor\"}\n",
+        "new": "{\"v\":\"hotel astor\"}\n"
+      },
+      {
+        "row": "12\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Holland America Cruises\"}\n",
+        "new": "{\"v\":\"holland america cruises\"}\n"
+      },
+      {
+        "row": "13\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"The Causerie\"}\n",
+        "new": "{\"v\":\"the causerie\"}\n"
+      },
+      {
+        "row": "14\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Hotel Taft\"}\n",
+        "new": "{\"v\":\"hotel taft\"}\n"
+      },
+      {
+        "row": "15\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"The Flying Clipper Restaurant\"}\n",
+        "new": "{\"v\":\"the flying clipper restaurant\"}\n"
+      },
+      {
+        "row": "16\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"OCEANIC STEAMSHIP CO. - S.S.ZEALANDIA\"}\n",
+        "new": "{\"v\":\"oceanic steamship co. - s.s.zealandia\"}\n"
+      },
+      {
+        "row": "17\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Caronia\"}\n",
+        "new": "{\"v\":\"caronia\"}\n"
+      },
+      {
+        "row": "18\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"GOVERNMENT OF STATE OF RHODE ISLAND\"}\n",
+        "new": "{\"v\":\"government of state of rhode island\"}\n"
+      },
+      {
+        "row": "19\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NEW ENGLAND SOCIETY OF NORTHEASTERN PENNSYLVANIA\"}\n",
+        "new": "{\"v\":\"new england society of northeastern pennsylvania\"}\n"
+      },
+      {
+        "row": "20\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"COLUMBIA UNIVERSITY DEBATING UNION\"}\n",
+        "new": "{\"v\":\"columbia university debating union\"}\n"
+      },
+      {
+        "row": "21\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"National Republican Club House [?]\"}\n",
+        "new": "{\"v\":\"national republican club house [?]\"}\n"
+      },
+      {
+        "row": "22\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"SCOTIA LODGE NO. 634\"}\n",
+        "new": "{\"v\":\"scotia lodge no. 634\"}\n"
+      },
+      {
+        "row": "23\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"GRAND UNION\"}\n",
+        "new": "{\"v\":\"grand union\"}\n"
+      },
+      {
+        "row": "24\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NATIONAL CONVENTION FOR THE EXTENSION OF THE FOREIGN COMMERCE OF THE U.S.\"}\n",
+        "new": "{\"v\":\"national convention for the extension of the foreign commerce of the u.s.\"}\n"
+      },
+      {
+        "row": "25\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"The New Haven R.R.\"}\n",
+        "new": "{\"v\":\"the new haven r.r.\"}\n"
+      },
+      {
+        "row": "26\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"ZABERERS\"}\n",
+        "new": "{\"v\":\"zaberers\"}\n"
+      },
+      {
+        "row": "27\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"HAMBURG-AMERIKA LINE\"}\n",
+        "new": "{\"v\":\"hamburg-amerika line\"}\n"
+      },
+      {
+        "row": "28\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Saengerbund Hall\"}\n",
+        "new": "{\"v\":\"saengerbund hall\"}\n"
+      },
+      {
+        "row": "29\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NORDDEUTSCHER LLOYD  BREMEN\"}\n",
+        "new": "{\"v\":\"norddeutscher lloyd  bremen\"}\n"
+      },
+      {
+        "row": "30\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Parker Studio\"}\n",
+        "new": "{\"v\":\"parker studio\"}\n"
+      },
+      {
+        "row": "31\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"[Restaurant name and/or location not given]\"}\n",
+        "new": "{\"v\":\"[restaurant name and/or location not given]\"}\n"
+      },
+      {
+        "row": "32\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Estate Carlton\"}\n",
+        "new": "{\"v\":\"estate carlton\"}\n"
+      },
+      {
+        "row": "33\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"HOTEL SAVOY\"}\n",
+        "new": "{\"v\":\"hotel savoy\"}\n"
+      },
+      {
+        "row": "34\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"S.S. \\\"Europa\\\"\\\"\\\"\"}\n",
+        "new": "{\"v\":\"s.s. \\\"europa\\\"\\\"\\\"\"}\n"
+      },
+      {
+        "row": "36\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Hotel Saskatchewan\"}\n",
+        "new": "{\"v\":\"hotel saskatchewan\"}\n"
+      },
+      {
+        "row": "37\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Tn. \\\\Leonardo Da Vinci\\\\\\\"\\\"\"}\n",
+        "new": "{\"v\":\"tn. \\\\leonardo da vinci\\\\\\\"\\\"\"}\n"
+      },
+      {
+        "row": "38\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Ziggy's\"}\n",
+        "new": "{\"v\":\"ziggy's\"}\n"
+      },
+      {
+        "row": "39\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"GORDON HOTEL\"}\n",
+        "new": "{\"v\":\"gordon hotel\"}\n"
+      },
+      {
+        "row": "40\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"HOTEL ALGAZAR\"}\n",
+        "new": "{\"v\":\"hotel algazar\"}\n"
+      },
+      {
+        "row": "41\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Congress Hotel\"}\n",
+        "new": "{\"v\":\"congress hotel\"}\n"
+      },
+      {
+        "row": "42\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Cavanagh's\"}\n",
+        "new": "{\"v\":\"cavanagh's\"}\n"
+      },
+      {
+        "row": "43\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NIPPON YUSEN KAISHA -S.S.KINSHIN MARU\"}\n",
+        "new": "{\"v\":\"nippon yusen kaisha -s.s.kinshin maru\"}\n"
+      },
+      {
+        "row": "44\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"SUMMIT HOUSE\"}\n",
+        "new": "{\"v\":\"summit house\"}\n"
+      },
+      {
+        "row": "45\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NORDDEUTSCHER LLOYD BREMEN\"}\n",
+        "new": "{\"v\":\"norddeutscher lloyd bremen\"}\n"
+      },
+      {
+        "row": "46\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"S.S. \\\"Normandie\\\"\\\"\\\"\"}\n",
+        "new": "{\"v\":\"s.s. \\\"normandie\\\"\\\"\\\"\"}\n"
+      },
+      {
+        "row": "47\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"HARLOW & KUCHLIN RESTAURANT OYSTER & CHOP HOUSE\"}\n",
+        "new": "{\"v\":\"harlow & kuchlin restaurant oyster & chop house\"}\n"
+      },
+      {
+        "row": "48\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Hotel Astor\"}\n",
+        "new": "{\"v\":\"hotel astor\"}\n"
+      },
+      {
+        "row": "49\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NORWEGIAN CLUB OF NEW YORK\"}\n",
+        "new": "{\"v\":\"norwegian club of new york\"}\n"
+      },
+      {
+        "row": "50\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"The New Morrison Hotel\"}\n",
+        "new": "{\"v\":\"the new morrison hotel\"}\n"
+      },
+      {
+        "row": "51\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"HOTEL VICTORY\"}\n",
+        "new": "{\"v\":\"hotel victory\"}\n"
+      },
+      {
+        "row": "52\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"U.S.M.S. St. Louis, Dinner.\"}\n",
+        "new": "{\"v\":\"u.s.m.s. st. louis, dinner.\"}\n"
+      },
+      {
+        "row": "53\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Pallister Hotel\"}\n",
+        "new": "{\"v\":\"pallister hotel\"}\n"
+      },
+      {
+        "row": "54\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"COLONIAL HOTEL\"}\n",
+        "new": "{\"v\":\"colonial hotel\"}\n"
+      },
+      {
+        "row": "55\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Waldorf-Astoria: South Gate\"}\n",
+        "new": "{\"v\":\"waldorf-astoria: south gate\"}\n"
+      },
+      {
+        "row": "56\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"THE ANNEX\"}\n",
+        "new": "{\"v\":\"the annex\"}\n"
+      },
+      {
+        "row": "57\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Hotel Astor\"}\n",
+        "new": "{\"v\":\"hotel astor\"}\n"
+      },
+      {
+        "row": "58\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"ALCAZAR HOTEL\"}\n",
+        "new": "{\"v\":\"alcazar hotel\"}\n"
+      },
+      {
+        "row": "59\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"VIRGINIA HOTEL\"}\n",
+        "new": "{\"v\":\"virginia hotel\"}\n"
+      },
+      {
+        "row": "60\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Waldorf Astoria\"}\n",
+        "new": "{\"v\":\"waldorf astoria\"}\n"
+      },
+      {
+        "row": "61\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"S.S. Frederik VIII\"}\n",
+        "new": "{\"v\":\"s.s. frederik viii\"}\n"
+      },
+      {
+        "row": "62\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"The Chemists' Club\"}\n",
+        "new": "{\"v\":\"the chemists' club\"}\n"
+      },
+      {
+        "row": "63\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"U.S.S. LOUISIANA\"}\n",
+        "new": "{\"v\":\"u.s.s. louisiana\"}\n"
+      },
+      {
+        "row": "64\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"R.H. MACY & CO.\"}\n",
+        "new": "{\"v\":\"r.h. macy & co.\"}\n"
+      },
+      {
+        "row": "65\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Imperial Hotel\"}\n",
+        "new": "{\"v\":\"imperial hotel\"}\n"
+      },
+      {
+        "row": "66\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Compagnie Ge\u0301ne\u0301rale Transatlantique\"}\n",
+        "new": "{\"v\":\"compagnie ge\u0301ne\u0301rale transatlantique\"}\n"
+      },
+      {
+        "row": "68\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Park Lane\"}\n",
+        "new": "{\"v\":\"park lane\"}\n"
+      },
+      {
+        "row": "69\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Larr\u00e9's\"}\n",
+        "new": "{\"v\":\"larr\u00e9's\"}\n"
+      },
+      {
+        "row": "70\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Wm. F. Healy's 42nd St. Grill\"}\n",
+        "new": "{\"v\":\"wm. f. healy's 42nd st. grill\"}\n"
+      },
+      {
+        "row": "71\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"S.S. United States\"}\n",
+        "new": "{\"v\":\"s.s. united states\"}\n"
+      },
+      {
+        "row": "72\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Waldorf Astoria\"}\n",
+        "new": "{\"v\":\"waldorf astoria\"}\n"
+      },
+      {
+        "row": "73\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"JUNKET CLUB\"}\n",
+        "new": "{\"v\":\"junket club\"}\n"
+      },
+      {
+        "row": "74\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Berns\"}\n",
+        "new": "{\"v\":\"berns\"}\n"
+      },
+      {
+        "row": "75\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Hotel Earlington\"}\n",
+        "new": "{\"v\":\"hotel earlington\"}\n"
+      },
+      {
+        "row": "76\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Praha\"}\n",
+        "new": "{\"v\":\"praha\"}\n"
+      },
+      {
+        "row": "77\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NORDDEUTSCHER LLOYD BREMEN\"}\n",
+        "new": "{\"v\":\"norddeutscher lloyd bremen\"}\n"
+      },
+      {
+        "row": "78\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"R.M.S. Mauretania\"}\n",
+        "new": "{\"v\":\"r.m.s. mauretania\"}\n"
+      },
+      {
+        "row": "79\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"MURRAY HILL HOTEL\"}\n",
+        "new": "{\"v\":\"murray hill hotel\"}\n"
+      },
+      {
+        "row": "80\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NORDDEUTSCHER LLOYD BREMEN\"}\n",
+        "new": "{\"v\":\"norddeutscher lloyd bremen\"}\n"
+      },
+      {
+        "row": "81\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"The Merchant's Club\"}\n",
+        "new": "{\"v\":\"the merchant's club\"}\n"
+      },
+      {
+        "row": "83\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"FLAT IRON RESTAURANT AND CAFE\"}\n",
+        "new": "{\"v\":\"flat iron restaurant and cafe\"}\n"
+      },
+      {
+        "row": "84\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"ST. LOUIS HORSE SHOW ASSOCIATION\"}\n",
+        "new": "{\"v\":\"st. louis horse show association\"}\n"
+      },
+      {
+        "row": "85\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NORMAN E. MACK\"}\n",
+        "new": "{\"v\":\"norman e. mack\"}\n"
+      },
+      {
+        "row": "86\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"SHOE AND LEATHE MANUFACURERS\"}\n",
+        "new": "{\"v\":\"shoe and leathe manufacurers\"}\n"
+      },
+      {
+        "row": "87\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"SECOND PANEL SHERIFF'S JURY\"}\n",
+        "new": "{\"v\":\"second panel sheriff's jury\"}\n"
+      },
+      {
+        "row": "89\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Astor House\"}\n",
+        "new": "{\"v\":\"astor house\"}\n"
+      },
+      {
+        "row": "90\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NIPPON YUSEN KAISHA\"}\n",
+        "new": "{\"v\":\"nippon yusen kaisha\"}\n"
+      },
+      {
+        "row": "91\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"HAMBURG-AMERIKA LINIE\"}\n",
+        "new": "{\"v\":\"hamburg-amerika linie\"}\n"
+      },
+      {
+        "row": "93\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NORDDEUTSCHER LLOYD  BREMEN\"}\n",
+        "new": "{\"v\":\"norddeutscher lloyd  bremen\"}\n"
+      },
+      {
+        "row": "94\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Waldorf Astoria\"}\n",
+        "new": "{\"v\":\"waldorf astoria\"}\n"
+      },
+      {
+        "row": "95\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Limberlock Lodge\"}\n",
+        "new": "{\"v\":\"limberlock lodge\"}\n"
+      },
+      {
+        "row": "96\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Waldorf Astoria\"}\n",
+        "new": "{\"v\":\"waldorf astoria\"}\n"
+      },
+      {
+        "row": "97\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Hotel Victoria\"}\n",
+        "new": "{\"v\":\"hotel victoria\"}\n"
+      },
+      {
+        "row": "98\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Virdan Restaurant\"}\n",
+        "new": "{\"v\":\"virdan restaurant\"}\n"
+      },
+      {
+        "row": "99\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Cliff House\"}\n",
+        "new": "{\"v\":\"cliff house\"}\n"
+      },
+      {
+        "row": "100\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Hotel Athens\"}\n",
+        "new": "{\"v\":\"hotel athens\"}\n"
+      },
+      {
+        "row": "101\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Barbizon Plaza\"}\n",
+        "new": "{\"v\":\"barbizon plaza\"}\n"
+      },
+      {
+        "row": "102\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"BAILEY CATERING COMPANH\"}\n",
+        "new": "{\"v\":\"bailey catering companh\"}\n"
+      },
+      {
+        "row": "103\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"TAMPA BAY HOTEL\"}\n",
+        "new": "{\"v\":\"tampa bay hotel\"}\n"
+      },
+      {
+        "row": "104\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"The Commodore Hotel\"}\n",
+        "new": "{\"v\":\"the commodore hotel\"}\n"
+      },
+      {
+        "row": "105\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"Waldorf-Astoria\"}\n",
+        "new": "{\"v\":\"waldorf-astoria\"}\n"
+      },
+      {
+        "row": "106\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"TOYO KISEN KAISHA\"}\n",
+        "new": "{\"v\":\"toyo kisen kaisha\"}\n"
+      },
+      {
+        "row": "107\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"NORDDEUTSCHER LLOYD BREMEN\"}\n",
+        "new": "{\"v\":\"norddeutscher lloyd bremen\"}\n"
+      },
+      {
+        "row": "108\n",
+        "cell": "3\n",
+        "old": "{\"v\":\"CAFETERIA - LUNCH\"}\n",
+        "new": "{\"v\":\"cafeteria - lunch\"}\n"
+      }
+    ]
+  }
+]
