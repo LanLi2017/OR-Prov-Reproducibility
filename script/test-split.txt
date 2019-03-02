@@ -1,0 +1,321 @@
+3.1
+com.google.refine.model.changes.ColumnSplitChange
+columnName=sponsor
+columnNameCount=4
+sponsor 1
+sponsor 2
+sponsor 3
+sponsor 4
+rowIndexCount=102
+0
+2
+3
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+83
+84
+85
+86
+87
+89
+90
+91
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+tupleCount=102
+4
+"Supper Menu"
+" S. S. Vaderland"
+" March 18th"
+1910.0
+1
+"Moulin"
+1
+"CORTLAND COUNTY SOCIETY OF NEW YORK"
+1
+"Gramercy Inn; H.R. Weissberg Hotel Corp."
+1
+"Bethlehem Steel Club"
+1
+"SUMMIT HOUSE"
+1
+"The Ambassador"
+1
+"Cavanagh's"
+1
+"TOYO KISEN KAISHA"
+1
+"Hotel Astor"
+1
+"Holland America Cruises"
+1
+"The Causerie"
+1
+"Hotel Taft"
+1
+"The Flying Clipper Restaurant"
+1
+"OCEANIC STEAMSHIP CO. - S.S.ZEALANDIA"
+1
+"Caronia"
+1
+"GOVERNMENT OF STATE OF RHODE ISLAND"
+1
+"NEW ENGLAND SOCIETY OF NORTHEASTERN PENNSYLVANIA"
+1
+"COLUMBIA UNIVERSITY DEBATING UNION"
+1
+"National Republican Club House [?]"
+1
+"SCOTIA LODGE NO. 634"
+1
+"GRAND UNION"
+1
+"NATIONAL CONVENTION FOR THE EXTENSION OF THE FOREIGN COMMERCE OF THE U.S."
+1
+"The New Haven R.R."
+1
+"ZABERERS"
+1
+"HAMBURG-AMERIKA LINE"
+1
+"Saengerbund Hall"
+1
+"NORDDEUTSCHER LLOYD  BREMEN"
+1
+"Parker Studio"
+1
+"[Restaurant name and/or location not given]"
+1
+"Estate Carlton"
+1
+"HOTEL SAVOY"
+1
+"S.S. \"Europa\"\"\""
+1
+"Hotel Saskatchewan"
+1
+"Tn. \\Leonardo Da Vinci\\\"\""
+1
+"Ziggy's"
+1
+"GORDON HOTEL"
+1
+"HOTEL ALGAZAR"
+1
+"Congress Hotel"
+1
+"Cavanagh's"
+1
+"NIPPON YUSEN KAISHA -S.S.KINSHIN MARU"
+1
+"SUMMIT HOUSE"
+1
+"NORDDEUTSCHER LLOYD BREMEN"
+1
+"S.S. \"Normandie\"\"\""
+1
+"HARLOW & KUCHLIN RESTAURANT OYSTER & CHOP HOUSE"
+1
+"Hotel Astor"
+1
+"NORWEGIAN CLUB OF NEW YORK"
+1
+"The New Morrison Hotel"
+1
+"HOTEL VICTORY"
+2
+"U.S.M.S. St. Louis"
+" Dinner."
+1
+"Pallister Hotel"
+1
+"COLONIAL HOTEL"
+1
+"Waldorf-Astoria: South Gate"
+1
+"THE ANNEX"
+1
+"Hotel Astor"
+1
+"ALCAZAR HOTEL"
+1
+"VIRGINIA HOTEL"
+1
+"Waldorf Astoria"
+1
+"S.S. Frederik VIII"
+1
+"The Chemists' Club"
+1
+"U.S.S. LOUISIANA"
+1
+"R.H. MACY & CO."
+1
+"Imperial Hotel"
+1
+"Compagnie Générale Transatlantique"
+1
+"Park Lane"
+1
+"Larré's"
+1
+"Wm. F. Healy's 42nd St. Grill"
+1
+"S.S. United States"
+1
+"Waldorf Astoria"
+1
+"JUNKET CLUB"
+1
+"Berns"
+1
+"Hotel Earlington"
+1
+"Praha"
+1
+"NORDDEUTSCHER LLOYD BREMEN"
+1
+"R.M.S. Mauretania"
+1
+"MURRAY HILL HOTEL"
+1
+"NORDDEUTSCHER LLOYD BREMEN"
+1
+"The Merchant's Club"
+1
+"FLAT IRON RESTAURANT AND CAFE"
+1
+"ST. LOUIS HORSE SHOW ASSOCIATION"
+1
+"NORMAN E. MACK"
+1
+"SHOE AND LEATHE MANUFACURERS"
+1
+"SECOND PANEL SHERIFF'S JURY"
+1
+"Astor House"
+1
+"NIPPON YUSEN KAISHA"
+1
+"HAMBURG-AMERIKA LINIE"
+1
+"NORDDEUTSCHER LLOYD  BREMEN"
+1
+"Waldorf Astoria"
+1
+"Limberlock Lodge"
+1
+"Waldorf Astoria"
+1
+"Hotel Victoria"
+1
+"Virdan Restaurant"
+1
+"Cliff House"
+1
+"Hotel Athens"
+1
+"Barbizon Plaza"
+1
+"BAILEY CATERING COMPANH"
+1
+"TAMPA BAY HOTEL"
+1
+"The Commodore Hotel"
+1
+"Waldorf-Astoria"
+1
+"TOYO KISEN KAISHA"
+1
+"NORDDEUTSCHER LLOYD BREMEN"
+1
+"CAFETERIA - LUNCH"
+removeOriginalColumn=true
