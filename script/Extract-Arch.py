@@ -37,6 +37,15 @@ def check_path(prompt):
             print('Project ID not Found.')
 
 
+# zip files in history folder
+def deal_zipfile(file_p,text_name):
+    with ZipFile(file_p)as change_f:
+        with change_f.open(text_name)as history_change:
+            change_P=TextIOWrapper(history_change,encoding='utf-8')
+            change_list=[line.rstrip('\n') for line in change_P]
+            return change_list
+
+
 def extract_JSON(datazip_path):
     # unzip data.zip  -> data.txt ->  id for change.txt -> description
     # deal with data.zip
@@ -45,18 +54,16 @@ def extract_JSON(datazip_path):
     # end with 'futureEntryCount='
     start_position=0
     end_position=0
-    start_regex=re.compile('pastEntryCount=[0-9]+\n')
-    end_regex=re.compile('futureEntryCount=[0-9]+\n')
-    with ZipFile(datazip_path)as data_archFile:
-        with data_archFile.open('data.txt') as datafile:
-            data_P=TextIOWrapper(datafile,encoding='utf-8')
-            data=list(data_P)
-            for index,item in enumerate(data,start=0):
-                if start_regex.match(item):
-                    start_position=index+1
-                if end_regex.match(item):
-                    end_position=index
-            preJson=data[start_position:end_position]
+    start_regex=re.compile('pastEntryCount=[0-9]+')
+    end_regex=re.compile('futureEntryCount=[0-9]+')
+    data=deal_zipfile(datazip_path,'data.txt')
+    for index,item in enumerate(data,start=0):
+        if start_regex.match(item):
+            start_position=index+1
+        if end_regex.match(item):
+            end_position=index
+    preJson=data[start_position:end_position]
+
     return preJson
 
 
@@ -69,6 +76,22 @@ def form_JSON(prejson_file,json_path):
         json.dump(Norm_JSON,f,indent=2)
 
 
+def get_count(change_list):
+    start_regex=re.compile('cellChangeCount=[0-9]+')
+    cell_change_count=0
+    for index,item in enumerate(change_list,start=0):
+        if start_regex.match(item):
+            cell_change_count=int(item.split('=')[-1])
+    return cell_change_count
+
+
+def get_op_name(change_list):
+    # the first line in the file
+    op_name=change_list[1].split('.')[-1]
+    return op_name
+
+
+# mass cell changes format
 def read_records(file,cell_change_count):
     for _ in range(cell_change_count):
         cell_change={}
@@ -82,17 +105,38 @@ def read_records(file,cell_change_count):
         yield cell_change
 
 
-def get_cell_change_count(file_p):
-    start_regex=re.compile('cellChangeCount=[0-9]+\n')
-    cell_change_count=0
-    with ZipFile(file_p)as change_f:
-        with change_f.open('change.txt') as history_change:
-            change_P=TextIOWrapper(history_change,encoding='utf-8')
-            change=list(change_P)
-            for index,item in enumerate(change,start=0):
-                if start_regex.match(item):
-                    cell_change_count=int(item.split('=')[-1])
-    return cell_change_count
+# single cell changes format
+def read_single():
+    pass
+
+
+# split column changes format
+def read_split():
+
+    pass
+
+
+# addition column changes format
+def read_addition():
+    pass
+
+
+# rename column changes format
+def read_rename():
+    pass
+
+
+# removal column changes format
+def read_removal():
+    pass
+
+
+# star row changes format
+def read_star():
+    pass
+
+
+
 
 
 
@@ -113,9 +157,10 @@ def extract_History(Hfiles_path_list):
         with ZipFile(file_p)as change_f:
             with change_f.open('change.txt') as history_change:
                 change_P=TextIOWrapper(history_change,encoding='utf-8')
-                cell_change_count=get_cell_change_count(file_p)
+                cell_change_count=get_count(file_p)
                 print(cell_change_count)
                 it=iter(change_P)
+                # hard code ...
                 for _ in range(5):
                     next(it)
                 norm_changes_edits=list(read_records(it,cell_change_count))
@@ -147,6 +192,7 @@ def combine_Data_History(norm_cell_change,data_json_path):
                     # d['changes']=edit
 
 
+
 def main():
     # find project path
     project_path=check_path('Input the project ID:')
@@ -176,6 +222,18 @@ def main():
     print(Hfiles_list)
 
     # raw changes extracting from History folder -> id.change.zip
+    # op_name=['MassCellChange','CellChange','ColumnSplitChange','ColumnAdditionChange','ColumnRenameChange','ColumnRemovalChange','RowStarChange']
+    op_action_map={
+        'MassCellChange': read_records,
+        'CellChange': read_single,
+        'ColumnSplitChange': read_split,
+        'ColumnAdditionChange': read_addition,
+        'ColumnRenameChange': read_rename,
+        'ColumnRemovalChange': read_removal,
+        'RowStarChange': read_star,
+    }
+
+
     all_changes=extract_History(Hfiles_list)
 
     combine_Data_History(all_changes,json_path)

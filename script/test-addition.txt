@@ -1,0 +1,58 @@
+3.1
+com.google.refine.model.changes.ColumnAdditionChange
+columnName=newadd
+columnIndex=5
+newCellIndex=21
+newCellCount=50
+0;{"v":"Supper Menu"}
+2;{"v":"Dessert menu"}
+3;{"v":"EIGHTH ANNUAL DINNER"}
+5;{"v":"lunch"}
+7;{"v":"SUPPER"}
+10;{"v":"TIFFIN"}
+16;{"v":"DINNER"}
+18;{"v":"INAUGURATION DAY"}
+19;{"v":"NINETEENTH ANNUAL DINNER"}
+20;{"v":"BANQUET OF CORNELL AND COLUMBIA DEBATING TEAMS"}
+22;{"v":"FORTIETH ANNIVERSARY AND BANQUET"}
+23;{"v":"DINNER"}
+24;{"v":"BANQUET"}
+26;{"v":"DINNER"}
+27;{"v":"LUNCH"}
+29;{"v":"MIDDAY MEAL"}
+33;{"v":"LUNCHEON"}
+39;{"v":"DINNER"}
+40;{"v":"THANKSGIVING DINNER"}
+43;{"v":"DINNER"}
+44;{"v":"THANKSGIVING DAY DINNER"}
+45;{"v":"LUNCH"}
+47;{"v":"MENU"}
+49;{"v":"BANQUET FO CAPT. ROALD AMUNDSEN"}
+51;{"v":"NOON DINNER"}
+52;{"v":"Dinner"}
+54;{"v":"SPECIAL SUPPER"}
+56;{"v":"DAILY MENU"}
+58;{"v":"LUNCHEON"}
+59;{"v":"DINNER"}
+63;{"v":"DAILY MENU"}
+64;{"v":"DAILY MENU, BREAKFAST"}
+68;{"v":"brunch"}
+73;{"v":"SIXTH CHARTER ANNIVERSARY MEAL;"}
+77;{"v":"DINNER"}
+79;{"v":"[LUNCH]"}
+80;{"v":"SPEISENFOLGE"}
+83;{"v":"DINNER SPECIALS"}
+84;{"v":"BANQUET"}
+85;{"v":"DINNER TO J.F.BURKE AND H.M.GERRANS"}
+86;{"v":"BANQUET TO THE WESTERN ASSOCIAION OF SHOE WHOLESALERS"}
+87;{"v":"ANNUAL BANQUET"}
+90;{"v":"DINNER"}
+91;{"v":"DINNER"}
+93;{"v":"DINNER"}
+102;{"v":"DINNER"}
+103;{"v":"DINNER"}
+106;{"v":"BREAKFAST"}
+107;{"v":"FRUHSTUCK"}
+108;{"v":"DAILY BILL OF FARE"}
+oldColumnGroupCount=0
+/ec/
