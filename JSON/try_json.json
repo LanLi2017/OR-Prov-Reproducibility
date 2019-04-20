@@ -36,114 +36,32 @@
     "description": "Text transform on 48 cells in column event: value.toLowercase()"
   }, 
   {
-    "operation": {
-      "regex": false, 
-      "description": "Split column sponsor by separator", 
-      "maxColumns": 0, 
-      "columnName": "sponsor", 
-      "guessCellType": true, 
-      "removeOriginalColumn": true, 
-      "separator": ",", 
-      "mode": "separator", 
-      "engineConfig": {
-        "facets": [], 
-        "mode": "row-based"
-      }, 
-      "op": "core/column-split"
-    }, 
-    "time": "2019-04-18T21:32:45Z", 
-    "id": 1555623821378, 
-    "description": "Split 102 cell(s) in column sponsor into several columns by separator"
-  }, 
-  {
-    "operation": {
-      "repeat": false, 
-      "description": "Text transform on cells in column sponsor 4 using expression value.toNumber()", 
-      "onError": "keep-original", 
-      "repeatCount": 10, 
-      "columnName": "sponsor 4", 
-      "engineConfig": {
-        "facets": [], 
-        "mode": "row-based"
-      }, 
-      "expression": "value.toNumber()", 
-      "op": "core/text-transform"
-    }, 
-    "time": "2019-04-18T21:32:55Z", 
-    "id": 1555623269891, 
-    "description": "Text transform on 0 cells in column sponsor 4: value.toNumber()"
-  }, 
-  {
-    "operation": {
-      "repeat": false, 
-      "description": "Text transform on cells in column date using expression value.toDate()", 
-      "onError": "keep-original", 
-      "repeatCount": 10, 
-      "columnName": "date", 
-      "engineConfig": {
-        "facets": [], 
-        "mode": "row-based"
-      }, 
-      "expression": "value.toDate()", 
-      "op": "core/text-transform"
-    }, 
-    "time": "2019-04-18T21:33:09Z", 
-    "id": 1555624115402, 
-    "description": "Text transform on 105 cells in column date: value.toDate()"
-  }, 
-  {
-    "operation": {
-      "repeat": false, 
-      "description": "Text transform on cells in column page_count using expression value.toNumber()", 
-      "onError": "keep-original", 
-      "repeatCount": 10, 
-      "columnName": "page_count", 
-      "engineConfig": {
-        "facets": [], 
-        "mode": "row-based"
-      }, 
-      "expression": "value.toNumber()", 
-      "op": "core/text-transform"
-    }, 
-    "time": "2019-04-18T21:33:16Z", 
-    "id": 1555623825374, 
-    "description": "Text transform on 109 cells in column page_count: value.toNumber()"
-  }, 
-  {
-    "operation": {
-      "description": "Mass edit cells in column sponsor 1", 
-      "columnName": "sponsor 1", 
-      "edits": [
-        {
-          "to": "norddeutscher lloyd bremen", 
-          "fromBlank": false, 
-          "from": [
-            "norddeutscher lloyd bremen", 
-            "norddeutscher lloyd  bremen"
-          ], 
-          "fromError": false
-        }
-      ], 
-      "engineConfig": {
-        "facets": [], 
-        "mode": "row-based"
-      }, 
-      "expression": "value", 
-      "op": "core/mass-edit"
-    }, 
-    "time": "2019-04-18T21:33:29Z", 
-    "id": 1555623975621, 
-    "description": "Mass edit 6 cells in column sponsor 1"
-  }, 
-  {
-    "oldStarred": "false", 
-    "newStarred": "true", 
+    "oldFlagged": "false", 
+    "newFlagged": "true", 
     "row": "0"
   }, 
   {
-    "cell": "24", 
-    "new": "{\"v\":\"good sponsor\"}", 
+    "operation": {
+      "repeat": false, 
+      "description": "Text transform on cells in column City&Country using expression value.toLowercase()", 
+      "onError": "keep-original", 
+      "repeatCount": 10, 
+      "columnName": "City&Country", 
+      "engineConfig": {
+        "facets": [], 
+        "mode": "row-based"
+      }, 
+      "expression": "value.toLowercase()", 
+      "op": "core/text-transform"
+    }, 
+    "time": "2019-04-20T23:04:42Z", 
+    "id": 1555801664890, 
+    "description": "Text transform on 49 cells in column City&Country: value.toLowercase()"
+  }, 
+  {
+    "cell": "5", 
+    "new": "{\"v\":\"venue1\"}", 
     "old": "", 
-    "row": "2"
+    "row": "0"
   }
 ]
