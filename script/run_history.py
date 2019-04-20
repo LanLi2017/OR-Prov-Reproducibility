@@ -1,6 +1,6 @@
 
 
-def run_history(input_file:str,history_dict:dict,output_file:str):
+def run_history(input_file,history_dict,output_file):
     """
     From dictionary use openrefine client api, customized
     and run the operation in a sequential order
