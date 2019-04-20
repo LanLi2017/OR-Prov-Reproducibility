@@ -37,6 +37,9 @@
   }, 
   {
     "oldFlagged": "false", 
+    "description": "Flag row 1", 
+    "time": "2019-04-20T23:04:25Z", 
+    "id": 1555801669201, 
     "newFlagged": "true", 
     "row": "0"
   }, 
@@ -60,8 +63,11 @@
   }, 
   {
     "cell": "5", 
-    "new": "{\"v\":\"venue1\"}", 
     "old": "", 
+    "description": "Edit single cell on row 1, column venue", 
+    "time": "2019-04-20T23:04:51Z", 
+    "new": "{\"v\":\"venue1\"}", 
+    "id": 1555801494756, 
     "row": "0"
   }
 ]
