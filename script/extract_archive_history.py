@@ -158,12 +158,15 @@ def extract_history():
             # replace this with the new one
             change_list=deal_mis_history_file_path(history_path,id)
             new_dicts=read_missing_records(change_list)
-            complete_Json.append(new_dicts)
+            dicts.update(new_dicts)
+            complete_Json.append(dicts)
         else:
             complete_Json.append(dicts)
     # store the json file : enhanced recipe
     json_path='../JSON/%s.json'%(raw_input('input the json name:'))
     store_JSON(complete_Json,json_path)
+
+    # need to wait for updating data.zip
 
 
 def main():
