@@ -106,7 +106,7 @@ def store_JSON(data_json,json_path):
     #     json.dump(Norm_JSON,f,indent=2)
 
 
-def extract_history(input_file:str):
+def extract_history(input_file):
     """
     use any function that have been developed
     process an openrefine project file
