@@ -197,11 +197,12 @@ def extract_history(input_file):
         else:
             complete_Json.append(dicts)
     # store the json file : enhanced recipe
-    json_path='JSON/%s.json'%(raw_input('input the json name:'))
-    store_JSON(complete_Json,json_path)
+    # json_path='JSON/%s.json'%(raw_input('input the json name:'))
+    # store_JSON(complete_Json,json_path)
     import shutil
     shutil.rmtree('temp')
     # need to wait for updating data.zip
+    return complete_Json
 
 
 def main():
