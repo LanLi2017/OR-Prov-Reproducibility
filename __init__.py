@@ -8,6 +8,7 @@ if __name__ == '__main__':
     import json
     with open("./test_files/airbnb_operations_normal.json","r") as file:
         recipe = json.load(file)
+        #recipe = extract_history("targzfile")
 
     run_history("./test_files/airbnb_test_raw.csv",project_name="test_bnb1",recipe=recipe)
     #project_file = "../test_files/airbnb_test.tar.gz"

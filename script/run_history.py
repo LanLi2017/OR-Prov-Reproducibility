@@ -20,8 +20,7 @@ def run_history(input_file,project_name,recipe,output_file=None,refine_server_ur
 
     # execute operations
     for op in recipe:
-
-        new_project.execute_json_ops([op])
+        new_project.execute_json_op(op)
 
     print(new_project)
     #raise NotImplementedError
