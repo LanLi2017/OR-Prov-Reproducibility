@@ -44,13 +44,16 @@
     "description": "Mass edit 10 cells in column event"
   }, 
   {
-    "cell": "3", 
-    "old": "{\"v\":\"LUNCH;\"}", 
+    "operation": {
+      "cell": "3", 
+      "new": "{\"v\":\"tutorial_menu\"}", 
+      "op": "custom/single-edit", 
+      "old": "{\"v\":\"LUNCH;\"}", 
+      "row": "3"
+    }, 
     "description": "Edit single cell on row 4, column event", 
-    "time": "2019-01-18T18:37:39Z", 
-    "new": "{\"v\":\"tutorial_menu\"}", 
     "id": 1547837318975, 
-    "row": "3"
+    "time": "2019-01-18T18:37:39Z"
   }, 
   {
     "operation": {
@@ -113,20 +116,26 @@
     "description": "Rename column location to position"
   }, 
   {
-    "oldFlagged": "false", 
+    "operation": {
+      "oldFlagged": "false", 
+      "op": "custom/flag", 
+      "newFlagged": "true", 
+      "row": "1"
+    }, 
     "description": "Flag row 2", 
-    "time": "2019-01-18T19:13:23Z", 
     "id": 1547839493103, 
-    "newFlagged": "true", 
-    "row": "1"
+    "time": "2019-01-18T19:13:23Z"
   }, 
   {
+    "operation": {
+      "oldStarred": "false", 
+      "op": "custom/star", 
+      "newStarred": "true", 
+      "row": "1"
+    }, 
     "description": "Star row 2", 
-    "time": "2019-01-18T19:14:06Z", 
-    "oldStarred": "false", 
-    "row": "1", 
     "id": 1547839841238, 
-    "newStarred": "true"
+    "time": "2019-01-18T19:14:06Z"
   }, 
   {
     "operation": {
@@ -157,12 +166,15 @@
     "description": "Fill down 0 cells in column location_type"
   }, 
   {
-    "cell": "3", 
-    "old": "{\"v\":\"[DINNER]\"}", 
+    "operation": {
+      "cell": "3", 
+      "new": "{\"v\":\"Abendessen\"}", 
+      "op": "custom/single-edit", 
+      "old": "{\"v\":\"[DINNER]\"}", 
+      "row": "1"
+    }, 
     "description": "Edit single cell on row 2, column event", 
-    "time": "2019-04-17T18:07:45Z", 
-    "new": "{\"v\":\"Abendessen\"}", 
     "id": 1555525174015, 
-    "row": "1"
+    "time": "2019-04-17T18:07:45Z"
   }
 ]

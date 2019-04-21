@@ -98,6 +98,17 @@ def deal_mis_history_file_path(history_path,id):
     return data
 
 
+def deal_missing_operations(newdicts,keyword):
+    if keyword.startswith("Edit"):
+        newdicts.update({"op":"custom/single-edit"})
+    elif keyword.startswith("Flag"):
+        newdicts.update({"op":"custom/flag"})
+    elif keyword.startswith("Star"):
+        newdicts.update({"op":"custom/star"})
+    newdicts={"operation":newdicts}
+    return newdicts
+
+
 def store_JSON(data_json,json_path):
     with open(json_path,'wt')as f:
         json.dump(data_json,f,indent=2)
@@ -175,8 +186,14 @@ def extract_history(input_file):
             # replace this with the new one
             change_list=deal_mis_history_file_path(history_path,id)
             new_dicts=read_missing_records(change_list)
-            dicts.update(new_dicts)
-            complete_Json.append(dicts)
+            # add something in the "op":
+            # deal with the dicts with different functions
+            # keyword: single_edit: "Edit single cell on row 2, column event", \
+            # Flag:"description": "Flag row 2"
+            keyword=dicts['description']
+            newdicts=deal_missing_operations(new_dicts,keyword)
+            newdicts.update(dicts)
+            complete_Json.append(newdicts)
         else:
             complete_Json.append(dicts)
     # store the json file : enhanced recipe
