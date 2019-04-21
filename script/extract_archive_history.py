@@ -1,5 +1,6 @@
 import json
 import os
+import tarfile
 from pprint import pprint
 from zipfile import ZipFile
 
@@ -8,6 +9,8 @@ import re
 from io import TextIOWrapper
 
 import copy
+import json
+
 
 
 def find_project_zip(projectid, path):
@@ -130,19 +133,29 @@ def extract_history(input_file):
     # get operations which do not have 'op'
     # enhanced JSON recipe = 'op' operations + reviewed_'op'
     # find project path
-    project_path=check_path('Input the project ID:')
-    names=os.listdir(project_path)
-    print(names)
     '''
     data.zip
     history(folder)
     '''
+    # uncompress tar.gz
+    tar=tarfile.open(input_file,"r:gz")
+    print(tar.tarinfo().name)
+    print(tar.extractall())
+
+    print('======================')
+    # for member in tar.getmembers():
+    #     f=tar.extractfile(member)
+    #     print(f.read())
+    #     if f is not None:
+    #        return 1
+
     # deal with data.zip
-    datazip_path=os.path.join(project_path,'data.zip')
+
+    datazip_path=os.path.join(input_file,'data.zip')
     print(os.path.exists(datazip_path))
 
     # path of history
-    history_path=os.path.join(project_path,'history')
+    history_path=os.path.join(input_file,'history')
 
     # extract JSON from data.zip which contains operations without 'op'
     inComplete_Json=extract_JSON(datazip_path)
@@ -175,10 +188,9 @@ def main():
     :return:
 
     """
-    import json
-    test_file = "../test_files/airbnb_test.tar.gz"
-    recipe = extract_history(test_file)
-    print(json.dump(recipe))
+    test_file = "../test_files/Tutorial_OR.openrefine.tar.gz"
+    extract_history(test_file)
+    # print(json.dump(recipe))
 
 
 if __name__=='__main__':
