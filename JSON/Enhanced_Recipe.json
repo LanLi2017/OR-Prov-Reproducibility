@@ -3,7 +3,7 @@
     "operation": {
       "repeat": false, 
       "description": "Text transform on cells in column sponsor using expression value.toLowercase()", 
-      "onError": "keep-original", 
+      "onError": "set-to-blank", 
       "repeatCount": 10, 
       "columnName": "sponsor", 
       "engineConfig": {
@@ -13,61 +13,156 @@
       "expression": "value.toLowercase()", 
       "op": "core/text-transform"
     }, 
-    "time": "2019-04-18T21:32:30Z", 
-    "id": 1555623680465, 
-    "description": "Text transform on 102 cells in column sponsor: value.toLowercase()"
+    "time": "2019-01-18T03:25:38Z", 
+    "id": 1547782431847, 
+    "description": "Text transform on 15923 cells in column sponsor: value.toLowercase()"
   }, 
   {
     "operation": {
-      "repeat": false, 
-      "description": "Text transform on cells in column event using expression value.toLowercase()", 
-      "onError": "keep-original", 
-      "repeatCount": 10, 
+      "description": "Mass edit cells in column event", 
       "columnName": "event", 
+      "edits": [
+        {
+          "to": "FOURTH ANNUAL DINNER", 
+          "fromBlank": false, 
+          "from": [
+            "FOURTH ANNUAL DINNER", 
+            "Fourth Annual Dinner"
+          ], 
+          "fromError": false
+        }
+      ], 
       "engineConfig": {
         "facets": [], 
         "mode": "row-based"
       }, 
-      "expression": "value.toLowercase()", 
-      "op": "core/text-transform"
+      "expression": "value", 
+      "op": "core/mass-edit"
     }, 
-    "time": "2019-04-18T21:32:36Z", 
-    "id": 1555623646091, 
-    "description": "Text transform on 48 cells in column event: value.toLowercase()"
+    "time": "2019-01-18T03:48:10Z", 
+    "id": 1547784200389, 
+    "description": "Mass edit 10 cells in column event"
+  }, 
+  {
+    "cell": "3", 
+    "old": "{\"v\":\"LUNCH;\"}", 
+    "description": "Edit single cell on row 4, column event", 
+    "time": "2019-01-18T18:37:39Z", 
+    "new": "{\"v\":\"tutorial_menu\"}", 
+    "id": 1547837318975, 
+    "row": "3"
+  }, 
+  {
+    "operation": {
+      "regex": false, 
+      "description": "Split column sponsor by separator", 
+      "maxColumns": 0, 
+      "columnName": "sponsor", 
+      "guessCellType": true, 
+      "removeOriginalColumn": true, 
+      "separator": ",", 
+      "mode": "separator", 
+      "engineConfig": {
+        "facets": [], 
+        "mode": "row-based"
+      }, 
+      "op": "core/column-split"
+    }, 
+    "time": "2019-01-18T18:47:30Z", 
+    "id": 1547837576816, 
+    "description": "Split 15984 cell(s) in column sponsor into several columns by separator"
+  }, 
+  {
+    "operation": {
+      "baseColumnName": "event", 
+      "description": "Create column news at index 8 based on column event using expression cells.date.value + cells.event.value", 
+      "onError": "set-to-blank", 
+      "newColumnName": "news", 
+      "columnInsertIndex": 8, 
+      "engineConfig": {
+        "facets": [], 
+        "mode": "row-based"
+      }, 
+      "expression": "cells.date.value + cells.event.value", 
+      "op": "core/column-addition"
+    }, 
+    "time": "2019-01-18T18:58:46Z", 
+    "id": 1547838693019, 
+    "description": "Create new column news based on column event by filling 7913 rows with cells.date.value + cells.event.value"
+  }, 
+  {
+    "operation": {
+      "columnName": "date", 
+      "index": 10, 
+      "description": "Move column date to position 10", 
+      "op": "core/column-move"
+    }, 
+    "time": "2019-01-18T19:04:33Z", 
+    "id": 1547838538300, 
+    "description": "Move column date to position 10"
+  }, 
+  {
+    "operation": {
+      "newColumnName": "position", 
+      "oldColumnName": "location", 
+      "description": "Rename column location to position", 
+      "op": "core/column-rename"
+    }, 
+    "time": "2019-01-18T19:12:24Z", 
+    "id": 1547839688022, 
+    "description": "Rename column location to position"
   }, 
   {
     "oldFlagged": "false", 
-    "description": "Flag row 1", 
-    "time": "2019-04-20T23:04:25Z", 
-    "id": 1555801669201, 
+    "description": "Flag row 2", 
+    "time": "2019-01-18T19:13:23Z", 
+    "id": 1547839493103, 
     "newFlagged": "true", 
-    "row": "0"
+    "row": "1"
+  }, 
+  {
+    "description": "Star row 2", 
+    "time": "2019-01-18T19:14:06Z", 
+    "oldStarred": "false", 
+    "row": "1", 
+    "id": 1547839841238, 
+    "newStarred": "true"
   }, 
   {
     "operation": {
-      "repeat": false, 
-      "description": "Text transform on cells in column City&Country using expression value.toLowercase()", 
-      "onError": "keep-original", 
-      "repeatCount": 10, 
-      "columnName": "City&Country", 
       "engineConfig": {
         "facets": [], 
         "mode": "row-based"
       }, 
-      "expression": "value.toLowercase()", 
-      "op": "core/text-transform"
+      "columnName": "event", 
+      "description": "Blank down cells in column event", 
+      "op": "core/blank-down"
     }, 
-    "time": "2019-04-20T23:04:42Z", 
-    "id": 1555801664890, 
-    "description": "Text transform on 49 cells in column City&Country: value.toLowercase()"
+    "time": "2019-01-18T19:23:25Z", 
+    "id": 1547840220682, 
+    "description": "Blank down 955 cells in column event"
   }, 
   {
-    "cell": "5", 
-    "old": "", 
-    "description": "Edit single cell on row 1, column venue", 
-    "time": "2019-04-20T23:04:51Z", 
-    "new": "{\"v\":\"venue1\"}", 
-    "id": 1555801494756, 
-    "row": "0"
+    "operation": {
+      "engineConfig": {
+        "facets": [], 
+        "mode": "row-based"
+      }, 
+      "columnName": "location_type", 
+      "description": "Fill down cells in column location_type", 
+      "op": "core/fill-down"
+    }, 
+    "time": "2019-01-18T19:23:57Z", 
+    "id": 1547840146945, 
+    "description": "Fill down 0 cells in column location_type"
+  }, 
+  {
+    "cell": "3", 
+    "old": "{\"v\":\"[DINNER]\"}", 
+    "description": "Edit single cell on row 2, column event", 
+    "time": "2019-04-17T18:07:45Z", 
+    "new": "{\"v\":\"Abendessen\"}", 
+    "id": 1555525174015, 
+    "row": "1"
   }
 ]

@@ -138,11 +138,17 @@ def extract_history(input_file):
     history(folder)
     '''
     # uncompress tar.gz
+    # TarFile.extractall(path=".", members=None, *, numeric_owner=False)
+    # store the uncompress files into a temp folder
+    directory='temp'
+    try:
+        os.stat(directory)
+        print("folder already exists")
+    except:
+        os.mkdir(directory)
+        print("create a folder")
     tar=tarfile.open(input_file,"r:gz")
-    print(tar.tarinfo().name)
-    print(tar.extractall())
-
-    print('======================')
+    tar.extractall(path=directory)
     # for member in tar.getmembers():
     #     f=tar.extractfile(member)
     #     print(f.read())
@@ -150,12 +156,10 @@ def extract_history(input_file):
     #        return 1
 
     # deal with data.zip
-
-    datazip_path=os.path.join(input_file,'data.zip')
-    print(os.path.exists(datazip_path))
+    datazip_path=os.path.join(directory,'data.zip')
 
     # path of history
-    history_path=os.path.join(input_file,'history')
+    history_path=os.path.join(directory,'history')
 
     # extract JSON from data.zip which contains operations without 'op'
     inComplete_Json=extract_JSON(datazip_path)
@@ -176,9 +180,10 @@ def extract_history(input_file):
         else:
             complete_Json.append(dicts)
     # store the json file : enhanced recipe
-    json_path='../JSON/%s.json'%(raw_input('input the json name:'))
+    json_path='JSON/%s.json'%(raw_input('input the json name:'))
     store_JSON(complete_Json,json_path)
-
+    import shutil
+    shutil.rmtree('temp')
     # need to wait for updating data.zip
 
 
