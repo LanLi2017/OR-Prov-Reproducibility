@@ -19,10 +19,16 @@ def run_history(input_file,project_name,recipe,output_file=None,refine_server_ur
     new_project = refine_server.new_project(input_file,project_name=project_name)
 
     # execute operations
-    for op in recipe:
-        new_project.execute_json_op(op)
 
-    print(new_project)
+    all_history = []
+    for op in recipe:
+        result = new_project.execute_json_op(op)
+        #print(result)
+        #if result["code"] == "ok":
+        #    if 'historyEntry' in result:
+        #        all_history.append(result["historyEntry"])
+
+    return new_project.list_history()
     #raise NotImplementedError
 
 
