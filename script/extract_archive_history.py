@@ -106,7 +106,7 @@ def store_JSON(data_json,json_path):
     #     json.dump(Norm_JSON,f,indent=2)
 
 
-def extract_history():
+def extract_history(input_file:str):
     """
     use any function that have been developed
     process an openrefine project file
@@ -170,7 +170,15 @@ def extract_history():
 
 
 def main():
-    extract_history()
+    """
+    execute test scenarios here
+    :return:
+
+    """
+    import json
+    test_file = "../test_files/airbnb_test.tar.gz"
+    recipe = extract_history(test_file)
+    print(json.dump(recipe))
 
 
 if __name__=='__main__':
