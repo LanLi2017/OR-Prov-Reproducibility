@@ -199,10 +199,16 @@ def extract_history(input_file):
     # store the json file : enhanced recipe
     # json_path='JSON/%s.json'%(raw_input('input the json name:'))
     # store_JSON(complete_Json,json_path)
+
+    # get metadata.json
+    metadata_path=os.path.join(directory,'metadata.json')
+    with open(metadata_path,'r')as f:
+        metadata=json.load(f)
+    pprint(metadata)
     import shutil
     shutil.rmtree('temp')
     # need to wait for updating data.zip
-    return complete_Json
+    return complete_Json,metadata
 
 
 def main():
