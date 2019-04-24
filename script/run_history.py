@@ -139,6 +139,8 @@ def compare_files(file1,file2):
     else:
         print "found",n_diff,"differences between",file1,"and",file2
 
+    return n_diff
+
 
 
 

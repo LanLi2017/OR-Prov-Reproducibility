@@ -35,5 +35,9 @@ if __name__ == '__main__':
     # compare processed files and cleaned files
     compare_files("test.csv","test_files/Tutorial_OR_clean.csv")
 
+    # delete the openrefine project file
+    # because project just for temporarily purpose
+    project.delete()
+
     #project_file = "../test_files/airbnb_test.tar.gz"
     #recipe = extract_history(project_file)
