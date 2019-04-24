@@ -123,6 +123,21 @@ def export_file(export_file,refine_project,export_format="csv"):
     #with open(export_file,"w") as file:
     #    file.writelines(project)
 
+def compare_files(file1,file2):
+    import difflib
+    text1 = open(file1).readlines()
+    text2 = open(file2).readlines()
+
+    n_diff = 0
+    for line in difflib.unified_diff(text1, text2):
+        # print the differences using difflib
+        print(line)
+        n_diff+=1
+
+    if n_diff==0:
+        print file1,"and",file2,"are totally the same"
+    else:
+        print "found",n_diff,"differences between",file1,"and",file2
 
 
 

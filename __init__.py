@@ -1,7 +1,7 @@
 
 if __name__ == '__main__':
     from script.extract_archive_history import extract_history
-    from script.run_history import run_history,export_file
+    from script.run_history import run_history,export_file,compare_files
 
     # read json history from test file
     # will be changed with the on the fly script
@@ -31,6 +31,9 @@ if __name__ == '__main__':
 
     # export file
     exported = export_file("test.csv",project)
+
+    # compare processed files and cleaned files
+    compare_files("test.csv","test_files/Tutorial_OR_clean.csv")
 
     #project_file = "../test_files/airbnb_test.tar.gz"
     #recipe = extract_history(project_file)
