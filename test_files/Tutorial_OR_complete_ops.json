@@ -1,0 +1,120 @@
+[
+  {
+    "repeat": false, 
+    "description": "Text transform on cells in column sponsor using expression value.toLowercase()", 
+    "onError": "set-to-blank", 
+    "repeatCount": 10, 
+    "columnName": "sponsor", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "expression": "value.toLowercase()", 
+    "op": "core/text-transform"
+  }, 
+  {
+    "description": "Mass edit cells in column event", 
+    "columnName": "event", 
+    "edits": [
+      {
+        "to": "FOURTH ANNUAL DINNER", 
+        "fromBlank": false, 
+        "from": [
+          "FOURTH ANNUAL DINNER", 
+          "Fourth Annual Dinner"
+        ], 
+        "fromError": false
+      }
+    ], 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "expression": "value", 
+    "op": "core/mass-edit"
+  }, 
+  {
+    "cell": "3", 
+    "new": "{\"v\":\"tutorial_menu\"}", 
+    "op": "custom/single-edit", 
+    "old": "{\"v\":\"LUNCH;\"}", 
+    "row": "3"
+  }, 
+  {
+    "regex": false, 
+    "description": "Split column sponsor by separator", 
+    "maxColumns": 0, 
+    "columnName": "sponsor", 
+    "guessCellType": true, 
+    "removeOriginalColumn": true, 
+    "separator": ",", 
+    "mode": "separator", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "op": "core/column-split"
+  }, 
+  {
+    "baseColumnName": "event", 
+    "description": "Create column news at index 8 based on column event using expression cells.date.value + cells.event.value", 
+    "onError": "set-to-blank", 
+    "newColumnName": "news", 
+    "columnInsertIndex": 8, 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "expression": "cells.date.value + cells.event.value", 
+    "op": "core/column-addition"
+  }, 
+  {
+    "columnName": "date", 
+    "index": 10, 
+    "description": "Move column date to position 10", 
+    "op": "core/column-move"
+  }, 
+  {
+    "newColumnName": "position", 
+    "oldColumnName": "location", 
+    "description": "Rename column location to position", 
+    "op": "core/column-rename"
+  }, 
+  {
+    "oldFlagged": "false", 
+    "op": "custom/flag", 
+    "newFlagged": "true", 
+    "row": "1"
+  }, 
+  {
+    "oldStarred": "false", 
+    "op": "custom/star", 
+    "newStarred": "true", 
+    "row": "1"
+  }, 
+  {
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "event", 
+    "description": "Blank down cells in column event", 
+    "op": "core/blank-down"
+  }, 
+  {
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "location_type", 
+    "description": "Fill down cells in column location_type", 
+    "op": "core/fill-down"
+  }, 
+  {
+    "cell": "3", 
+    "new": "{\"v\":\"Abendessen\"}", 
+    "op": "custom/single-edit", 
+    "old": "{\"v\":\"[DINNER]\"}", 
+    "row": "1"
+  }
+]
