@@ -1,6 +1,7 @@
 import json
 import os
 import tarfile
+from collections import OrderedDict
 from pprint import pprint
 from zipfile import ZipFile
 
@@ -68,7 +69,7 @@ def extract_JSON(datazip_path):
     d=[]
     for info in data_Json:
         json_acceptable_string=info.replace("'","\"")
-        d.append(json.loads(json_acceptable_string))
+        d.append(json.loads(json_acceptable_string,object_pairs_hook=OrderedDict))
     return d
 
 
@@ -78,7 +79,7 @@ def read_missing_records(change_list):
     :return: new dict
     """
     use_data=change_list[2:len(change_list)-1]
-    cell_change={}
+    cell_change=OrderedDict()
     for d in use_data:
         key,value=d.split('=')
         cell_change[key]=value
@@ -91,9 +92,6 @@ def deal_mis_history_file_path(history_path,id):
     # unzip missing_path
     # ../data.txt
     history_file=os.path.join(history_path,'%d.change.zip'%id)
-    print("=====")
-    print(history_file)
-    print("======")
     data=deal_zipfile(history_file,'change.txt')
     return data
 
@@ -218,7 +216,8 @@ def main():
 
     """
     test_file = "../test_files/Tutorial_OR.openrefine.tar.gz"
-    extract_history(test_file)
+    data_json=extract_history(test_file)
+    store_JSON(data_json,'../JSON/Enhanced_Recipe.json')
     # print(json.dump(recipe))
 
 
