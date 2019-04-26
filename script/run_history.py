@@ -105,6 +105,30 @@ def run_history(input_file,project_name,recipe,output_file=None,metadata=None,re
     return new_project,new_project.list_history()
     #raise NotImplementedError
 
+def select_project_byid(project_id,refine_server):
+    return refine_server.open_project(project_id)
+
+def select_project_byname(project_name,refine_server):
+    refine_projects = list_projects(refine_server)
+    #found = 0
+    found_list = []
+    for key,val in refine_projects.items():
+        if val["name"]==project_name:
+            found_list.append((key,val["name"],val["created"]))
+            #found+=1
+    if len(found_list)==1:
+        return refine_server.open_project(found_list[0][0])
+    else:
+        for x in found_list:
+            print("\t".join([x[0], x[1] + " (" + x[2] + ")"]))
+        raise Exception("found more than one project name: "+project_name+" use pid to select the project")
+
+
+def run_history_on_project(refine_project,recipe):
+    for op in recipe:
+        result = refine_project.execute_json_op(op)
+    return refine_project.list_history()
+
 def export_file(export_file,refine_project,export_format="csv"):
     """
     from input a project file
@@ -122,6 +146,28 @@ def export_file(export_file,refine_project,export_format="csv"):
             file.write(line)
     #with open(export_file,"w") as file:
     #    file.writelines(project)
+
+def or_connect(or_address="http://localhost:3333"):
+    return refine.Refine(refine.RefineServer(or_address))
+
+def list_projects(refine_server):
+    #refine_server = refine.Refine(refine_server)
+    refine_projects = refine_server.list_projects()
+    """
+    {u'1877818633188': {
+            'id': u'1877818633188', u'name': u'akg',
+            u'modified': u'2011-04-07T12:30:07Z',
+            u'created': u'2011-04-07T12:30:07Z'
+    }
+    """
+    return refine_projects
+
+def show_projects(refine_projects):
+    print("\t".join(["id","\tname (created_time)"]))
+    for x in refine_projects.items():
+        #print(x)
+        print("\t".join([x[0],x[1]["name"]+" ("+x[1]["created"]+")"]))
+
 
 def compare_files(file1,file2):
     import difflib
