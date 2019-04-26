@@ -6,13 +6,13 @@ import json
 def run():
     argv = sys.argv
     # required argument
-    reqs = ["input","output"]
+    # reqs = ["input","output"]
     parser = argparse.ArgumentParser(description='recipe runner, will execute open \
         refine recipe on the server using openrefine client api')
     parser.add_argument("-sp","--show-project",action="store_true",default=False,help="show project name and id on the server")
     parser.add_argument('-i','--input',default=None,
             help='openrefine json file ')
-    parser.add_argument("-pid","--project-id",default=None,help="project id for executed script")
+    parser.add_argument("-pid","--project-id",default=None,help="project id for target script execution")
     parser.add_argument("-pname", "--project-name", default=None, help="project name for executed script, \
         if project id assigned, will use project id instead")
     parser.add_argument('-s',"--server",
@@ -28,7 +28,7 @@ def run():
         if argobj["show_project"]:
             refine_projects = list_projects(refine_server)
             show_projects(refine_projects)
-        if argobj["input"]!=None:
+        elif argobj["input"]!=None:
             json_input = argobj["input"]
             with open(json_input,"r") as file:
                 ops = json.load(file)
@@ -46,6 +46,8 @@ def run():
                 run_history_on_project(refine_project, ops)
             else:
                 raise Exception("Must specify Project ID or Project Name")
+        else:
+            parser.print_help()
     except BaseException as exc:
         import traceback
         #parser.print_help()
