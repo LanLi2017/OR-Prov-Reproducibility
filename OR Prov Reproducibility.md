@@ -1,10 +1,15 @@
+---
+
+
+---
+
 <h1 id="openrefine-reproducibility-demo">OpenRefine Reproducibility Demo</h1>
 <p>These four demos are to test the OpenRefine <strong>reproducibility</strong></p>
 <h2 id="demo-0">Demo 0</h2>
 <p>This demo is supported by OpenRefine natively, should always work.<br>
 Part 1:<br>
 1). Create new OpenRefine project (P1) importing test data set (T).<br>
-<img src="https://lh3.googleusercontent.com/9We-m-vdid5iYV3d-RfToCDOPfXGaXrqPS4jik8Bhn9mJkO5B6PgZnEeXWsPz55kfC4nrPEuNyc" alt="Data set is from Menu.csv version 04/16/19 from New York Public Library " title="Create project P1" width="800"><br>
+<img src="https://lh3.googleusercontent.com/9We-m-vdid5iYV3d-RfToCDOPfXGaXrqPS4jik8Bhn9mJkO5B6PgZnEeXWsPz55kfC4nrPEuNyc" alt="Data set is from Menu.csv version 04/16/19 from New York Public Library " title="Create project P1"><br>
 2). Perform a few data cleaning operations, both generalizable and non-generalizable.<br>
 <img src="https://lh3.googleusercontent.com/4cvlYjKTXMBeKutAfOfhKC7pXWF6ClpoPEWHwrXA_vyPZ3PjSHkM90eJJ4IIUVfOnQA_ZgbAhp0" alt="enter image description here" title="Perform data cleaning operations"><br>
 3). View the operation <strong>history</strong>(H1)<br>
@@ -120,5 +125,6 @@ Script done on Mon Apr 29 15:33:39 2019
 3). The script connects to the running OR instance with P2 loaded, and applies the extended recipe.</p>
 <p>4). After a refresh of the OR web interface.<br>
 5). Export the cleaned data set (C2)<br>
-6). Show that C1 and C2 are <strong>same</strong> (data cleaning <strong>was</strong> reproduced)</p>
+6). Show that C1 and C2 are <strong>same</strong> (data cleaning <strong>was</strong> reproduced)<br>
+<img src="https://lh3.googleusercontent.com/6bkXIHdUiOeMu2M0UXZGODABHAeAQFavWeV6cCgob3wyX5egnjqQPP1Z9opxY-4jRwTRNsx9pI8s=s0" alt="enter image description here" title="test"></p>
 
