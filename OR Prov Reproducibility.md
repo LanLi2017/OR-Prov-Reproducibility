@@ -4,7 +4,7 @@
 <p>This demo is supported by OpenRefine natively, should always work.<br>
 Part 1:<br>
 1). Create new OpenRefine project (P1) importing test data set (T).<br>
-<img src="https://lh3.googleusercontent.com/9We-m-vdid5iYV3d-RfToCDOPfXGaXrqPS4jik8Bhn9mJkO5B6PgZnEeXWsPz55kfC4nrPEuNyc" alt="Data set is from Menu.csv version 04/16/19 from New York Public Library " title="Create project P1"><br>
+<img src="https://lh3.googleusercontent.com/9We-m-vdid5iYV3d-RfToCDOPfXGaXrqPS4jik8Bhn9mJkO5B6PgZnEeXWsPz55kfC4nrPEuNyc" alt="Data set is from Menu.csv version 04/16/19 from New York Public Library " title="Create project P1" width="800"><br>
 2). Perform a few data cleaning operations, both generalizable and non-generalizable.<br>
 <img src="https://lh3.googleusercontent.com/4cvlYjKTXMBeKutAfOfhKC7pXWF6ClpoPEWHwrXA_vyPZ3PjSHkM90eJJ4IIUVfOnQA_ZgbAhp0" alt="enter image description here" title="Perform data cleaning operations"><br>
 3). View the operation <strong>history</strong>(H1)<br>
