@@ -1,4 +1,4 @@
-from google.refine import refine
+from openrefine_client.google.refine import refine
 
 def run_history(input_file,project_name,recipe,output_file=None,metadata=None,refine_server_url="http://127.0.0.1:3333"):
     """

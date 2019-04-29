@@ -1,4 +1,3 @@
-
 if __name__ == '__main__':
     from script.extract_archive_history import extract_history,store_JSON
     from script.run_history import run_history,export_file,compare_files
