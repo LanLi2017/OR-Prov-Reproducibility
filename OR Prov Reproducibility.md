@@ -11,17 +11,17 @@ Part 1:<br>
 1). Create new OpenRefine project (P1) importing test data set (T).<br>
 <img src="https://lh3.googleusercontent.com/9We-m-vdid5iYV3d-RfToCDOPfXGaXrqPS4jik8Bhn9mJkO5B6PgZnEeXWsPz55kfC4nrPEuNyc" alt="Data set is from Menu.csv version 04/16/19 from New York Public Library " title="Create project P1"><br>
 2). Perform a few data cleaning operations, both generalizable and non-generalizable.<br>
-<img src="https://lh3.googleusercontent.com/4cvlYjKTXMBeKutAfOfhKC7pXWF6ClpoPEWHwrXA_vyPZ3PjSHkM90eJJ4IIUVfOnQA_ZgbAhp0" alt="enter image description here" title="Perform data cleaning operations"><br>
+<img src="https://lh3.googleusercontent.com/4cvlYjKTXMBeKutAfOfhKC7pXWF6ClpoPEWHwrXA_vyPZ3PjSHkM90eJJ4IIUVfOnQA_ZgbAhp0=s8000" alt="enter image description here" title="Perform data cleaning operations"><br>
 3). View the operation <strong>history</strong>(H1)<br>
-<img src="https://lh3.googleusercontent.com/_oXqoZYRCPsmFRGamo72RmeCwOacojL08GH6LDIkv4wYs9jR-OfvCvWwBYEE-HTy9no-sAAH4sA" alt="enter image description here" title="Extract Operation History"><br>
+<img src="https://lh3.googleusercontent.com/_oXqoZYRCPsmFRGamo72RmeCwOacojL08GH6LDIkv4wYs9jR-OfvCvWwBYEE-HTy9no-sAAH4sA=s8000" alt="enter image description here" title="Extract Operation History"><br>
 4). Undo all data cleaing steps, then redo all the operations.<br>
 5). Export the cleaned data set (<a href="https://drive.google.com/open?id=1zg3jDYuXNblminVmdQ5VEJyXrGdKFziW">C1</a>).<br>
 6). Export the project and save as an archive (<a href="https://drive.google.com/open?id=1RfEqHDCGtii3R3XD_BDHZMNwVzy-NRZq">A</a>), a tarball.</p>
 <p>Part 2:<br>
 1). Create a new OpenRefine project (P2), importing the exported archive (A).<br>
-<img src="https://lh3.googleusercontent.com/vKUv6TVcxbL7CVPRxnC3Ck6SQSCEIE0I-Rv9XqaMslAGikVCTaa1xiJXzoc_QdDUq9jNM8EFSSM" alt="Create a new project by imporing archive(A) from part1 of demo0" title="create a new project P2"><br>
+<img src="https://lh3.googleusercontent.com/vKUv6TVcxbL7CVPRxnC3Ck6SQSCEIE0I-Rv9XqaMslAGikVCTaa1xiJXzoc_QdDUq9jNM8EFSSM=s8000" alt="Create a new project by imporing archive(A) from part1 of demo0" title="create a new project P2"><br>
 2). View the operation <strong>history</strong> (H2) and check that it looks like H1<br>
-<img src="https://lh3.googleusercontent.com/8Fafs_2agkPlaVQ84AUTlV6sehoP0C0x2WtqE5mnG0IouWNtsQBxZRMtG_TSOabr4SeThjXMgUY" alt="H1 and H2 are the same" title="Compare H1 and H2"><br>
+<img src="https://lh3.googleusercontent.com/8Fafs_2agkPlaVQ84AUTlV6sehoP0C0x2WtqE5mnG0IouWNtsQBxZRMtG_TSOabr4SeThjXMgUY=s8000" alt="H1 and H2 are the same" title="Compare H1 and H2"><br>
 3). Undo all data cleaning steps, then redo all the operations.<br>
 4). Export the cleaned data set (<a href="https://drive.google.com/open?id=1cN2svCY3V2vyNblXzPB07MSLvqPMZwOJ">C2</a>).<br>
 5). Show that C1 and C2 are the <strong>same</strong>.</p>
@@ -42,13 +42,13 @@ Script done on Sun Apr 28 17:10:07 2019
 <p>Part 1:<br>
 1). Create new OpenRefine project (P3) importing test data set (T).<br>
 2). Perform a few data cleaing operations where all operations are generalizable.<br>
-<img src="https://lh3.googleusercontent.com/81QHE_FdPgmVXTWfu_U_WHW94-zKaQSYljUA8LRRhX1yvNnbhKoHiHrMGQ-OHTab_g77uXIHUQo" alt="enter image description here" title="Generalized operations"><br>
+<img src="https://lh3.googleusercontent.com/81QHE_FdPgmVXTWfu_U_WHW94-zKaQSYljUA8LRRhX1yvNnbhKoHiHrMGQ-OHTab_g77uXIHUQo=s8000" alt="enter image description here" title="Generalized operations"><br>
 3). Export the operation history and save as a <strong>recipe</strong> (<a href="https://drive.google.com/open?id=18Cb606OWsgt11sn5Kwr6DcBzfsP4_xFJ">R</a>) via copy and paste to a file.<br>
 4). Export the cleaned data set (<a href="https://drive.google.com/open?id=14NaoCElH9Qr5Aaw8YaPDC8gHoprz8MTY">C3</a>)</p>
 <p>Part 2:<br>
 1). Create a new OpenRefine project (P4) importing test data set (T).<br>
 2). Execute <strong>recipe</strong> R through the OR interface.<br>
-<img src="https://lh3.googleusercontent.com/jQTMQ53cVJVoUwtw5zWB-OJN3D_nsrf-VwVZGy2Wt2e806K6VM-xTBgFy7vrgxdPDKuNWNrb7V8" alt="enter image description here" title="Apply recipe R to Project P4"><br>
+<img src="https://lh3.googleusercontent.com/jQTMQ53cVJVoUwtw5zWB-OJN3D_nsrf-VwVZGy2Wt2e806K6VM-xTBgFy7vrgxdPDKuNWNrb7V8=s8000" alt="enter image description here" title="Apply recipe R to Project P4"><br>
 3). Export the cleaned data set (<a href="https://drive.google.com/open?id=1norLAD0mhMzlYtmDOrkLv8vhyWFnLCwO">C4</a>)<br>
 4). Show that C3 and C4 are the <strong>same</strong> (data cleaning was reproduced).</p>
 <pre><code>script Diff_C3_C4.log
@@ -69,15 +69,15 @@ Script done on Sun Apr 28 16:49:01 2019
 1). Create a new OpenRefine project (P5) importing test data set (T).<br>
 2). Perform a few data cleaning operations where <strong>one</strong> operation is non-generalizable.<br>
 3). View the operation <strong>history</strong> (H1).<br>
-<img src="https://lh3.googleusercontent.com/SCY0kpxeGMz00ZGdzteDGaVzCXZlkhcVqj4rBPiTUbJ0A08NoZtAg4TJdkivo3QvF5wjWl3k15Me" alt="enter image description here" title="Non-generalizable Operation"><br>
+<img src="https://lh3.googleusercontent.com/SCY0kpxeGMz00ZGdzteDGaVzCXZlkhcVqj4rBPiTUbJ0A08NoZtAg4TJdkivo3QvF5wjWl3k15Me=s8000" alt="enter image description here" title="Non-generalizable Operation"><br>
 4). Export the operation <strong>history</strong> and save as a <strong>recipe</strong> (<a href="https://drive.google.com/open?id=1lZ0c_hBq6ISoklrqpLRvgK1YCsfnCxYT">R</a>) via copy and paste to a file.<br>
 5). Export the cleaned data set (<a href="https://drive.google.com/open?id=1bUdEoTALvkAOr71dWgZBRpWGnMrHZOE5">C1</a>)</p>
 <p>Part 2:<br>
 1). Create a new OpenRefine project (P6) importing test data set (T).<br>
 2). Execute <strong>recipe</strong> R through the OR interface.<br>
-<img src="https://lh3.googleusercontent.com/QksTjtBgqkNZKbL4DqXjprG4EyMP7Bpw88Kc0WQHYfJF0BLtfOwcFKJbLVYz9tEfXlGLfo5pq6QQ" alt="enter image description here" title="Apply R to P2"><br>
+<img src="https://lh3.googleusercontent.com/QksTjtBgqkNZKbL4DqXjprG4EyMP7Bpw88Kc0WQHYfJF0BLtfOwcFKJbLVYz9tEfXlGLfo5pq6QQ=s8000" alt="enter image description here" title="Apply R to P2"><br>
 2). View the operation <strong>history</strong> (H2) and note that H2 lacks the non-generalizable steps from H1.<br>
-<img src="https://lh3.googleusercontent.com/j-ibXPDJ_zEQNdpSDw2mmffdq5tMu_dJJ1T_CgKQCyJ7OHBSvVe6GKFF6BjlA2JiefhU1XMa_c6-" alt="Missing operation for single edit" title="Compare H1_H2"><br>
+<img src="https://lh3.googleusercontent.com/j-ibXPDJ_zEQNdpSDw2mmffdq5tMu_dJJ1T_CgKQCyJ7OHBSvVe6GKFF6BjlA2JiefhU1XMa_c6-=s8000" alt="Missing operation for single edit" title="Compare H1_H2"><br>
 3). Export the cleaned data set (<a href="https://drive.google.com/open?id=10YyART-zao33U4hYA_ormS0c8cxfibeB">C2</a>)<br>
 4). Show that C1 and C2 are <strong>different</strong> (data cleaning <strong>not</strong> reproduced)</p>
 <pre><code>script Diff_demo1b_C1_C2.log
@@ -125,6 +125,5 @@ Script done on Mon Apr 29 15:33:39 2019
 3). The script connects to the running OR instance with P2 loaded, and applies the extended recipe.</p>
 <p>4). After a refresh of the OR web interface.<br>
 5). Export the cleaned data set (C2)<br>
-6). Show that C1 and C2 are <strong>same</strong> (data cleaning <strong>was</strong> reproduced)<br>
-<img src="https://lh3.googleusercontent.com/9ZwlG02jc6tLy-wEocLF50hTed1ByYy-uzAgDHOvc98hHkEcZunrnLdMiQUOk_w_-jzzFklRTh2r=s8000" alt="enter image description here"></p>
+6). Show that C1 and C2 are <strong>same</strong> (data cleaning <strong>was</strong> reproduced)</p>
 
