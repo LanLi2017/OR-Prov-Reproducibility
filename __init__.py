@@ -22,7 +22,7 @@ if __name__ == '__main__':
     ops_recipe = []
     for x in recipe:
         try:
-            ops_recipe.append(x["operation"])
+            ops_recipe.append(x)
         except:
             print("No Operation for: ",x)
             pass
