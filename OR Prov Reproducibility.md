@@ -1,8 +1,3 @@
----
-
-
----
-
 <h1 id="openrefine-reproducibility-demo">OpenRefine Reproducibility Demo</h1>
 <p>These four demos are to test the OpenRefine <strong>reproducibility</strong></p>
 <h2 id="demo-0">Demo 0</h2>
