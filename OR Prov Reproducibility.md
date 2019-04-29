@@ -9,7 +9,7 @@
 <p>This demo is supported by OpenRefine natively, should always work.<br>
 Part 1:<br>
 1). Create new OpenRefine project (P1) importing test data set (T).<br>
-<img src="https://lh3.googleusercontent.com/9We-m-vdid5iYV3d-RfToCDOPfXGaXrqPS4jik8Bhn9mJkO5B6PgZnEeXWsPz55kfC4nrPEuNyc" alt="Data set is from Menu.csv version 04/16/19 from New York Public Library " title="Create project P1"><br>
+<img src="https://lh3.googleusercontent.com/9We-m-vdid5iYV3d-RfToCDOPfXGaXrqPS4jik8Bhn9mJkO5B6PgZnEeXWsPz55kfC4nrPEuNyc=s8000" alt="Data set is from Menu.csv version 04/16/19 from New York Public Library " title="Create project P1"><br>
 2). Perform a few data cleaning operations, both generalizable and non-generalizable.<br>
 <img src="https://lh3.googleusercontent.com/4cvlYjKTXMBeKutAfOfhKC7pXWF6ClpoPEWHwrXA_vyPZ3PjSHkM90eJJ4IIUVfOnQA_ZgbAhp0=s8000" alt="enter image description here" title="Perform data cleaning operations"><br>
 3). View the operation <strong>history</strong>(H1)<br>
@@ -121,9 +121,24 @@ Script done on Mon Apr 29 15:33:39 2019
 8). Exported the cleaned data set (<a href="https://drive.google.com/open?id=17MIkIfqPzYzGqI74uZffvsQ9_0PjnuRe">C1</a>).</p>
 <p>Part 2:<br>
 1). Create a new OpenRefine project (P2) importing test data set (T) through the OR interface.<br>
-2). Run the <strong>Complete-History-Application</strong> script giving it ER as input.<br>
-3). The script connects to the running OR instance with P2 loaded, and applies the extended recipe.</p>
-<p>4). After a refresh of the OR web interface.<br>
-5). Export the cleaned data set (C2)<br>
+<img src="https://lh3.googleusercontent.com/8NM7iYuxixKqcuGQdYJXIRZRxYSlimNGZg3o3Nec3p7abIBqfbJkJCjg3r7fT5u22rQLHlr-lXl4=s8000" alt="demo2 project" title="demo2 project"><br>
+2). Run the <strong>Complete-History-Application</strong> script giving it ER as input.</p>
+<pre><code>   $ python run_or_script.py -i ./JSON/Enhanced_Recipe.json -pname "demo2_part2"
+   recipe ./JSON/Enhanced_Recipe.json executed on project: demo2_part2
+</code></pre>
+<p><img src="https://lh3.googleusercontent.com/TE43WR55TI3wccjhcAU5IA-Av4sjz2zFaMFOfhZQm6bjouW9X7qlgaPinf7sIfhMvUZmiDz8CvjW=s8000" alt="enter image description here" title="Demo2 project refresh"></p>
+<p>3). The script connects to the running OR instance with P2 loaded, and applies the extended recipe.<br>
+4). After a refresh of the OR web interface.<br>
+5). Export the cleaned data set (<a href="https://drive.google.com/open?id=1DnETG_JMXXiwGhILvYhhjC8kvvlzQbsz">C2</a>)<br>
 6). Show that C1 and C2 are <strong>same</strong> (data cleaning <strong>was</strong> reproduced)</p>
+<pre><code>script Diff_C1_C2
+</code></pre>
+<p>Get the <a href="https://drive.google.com/open?id=1-2vQp3xR_qFY6Qtz3fidW4iz4bVBlEZv">log</a> file:</p>
+<pre><code>Script started on Mon Apr 29 17:24:45 2019 
+[?1034hbash-3.2$ diff demo [Kdemo2_part1.csv demo2_part2.csv &gt;&gt; Diff_C1_D [KC2.gt [Ktxt 
+bash-3.2$ exit 
+exit 
+Script done on Mon Apr 29 17:25:05 2019
+</code></pre>
+<p>The difference between C1 and C2 is stored in <a href="https://drive.google.com/open?id=1hCIMx-5vz_4qsOoPDpOei6AnKSnEiUIt">Diff_C1_C2.txt</a>, which it shows that C1 is the same as C2.</p>
 
