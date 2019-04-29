@@ -41,9 +41,11 @@ def run():
                     raise Exception("cannot find project id {} on the server".format(pid))
                 refine_project = select_project_byid(pid,refine_server)
                 run_history_on_project(refine_project,ops)
+                print("recipe {} executed on project id: {}".format(json_input,pid))
             elif pname!=None:
                 refine_project = select_project_byname(pname,refine_server)
                 run_history_on_project(refine_project, ops)
+                print("recipe {} executed on project: {}".format(json_input, pname))
             else:
                 raise Exception("Must specify Project ID or Project Name")
         else:
