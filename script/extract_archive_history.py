@@ -68,7 +68,7 @@ def extract_JSON(datazip_path):
     data_Json=data[start_position:end_position]
     d=[]
     for info in data_Json:
-        json_acceptable_string=info.replace("'","\"")
+        json_acceptable_string=info.replace("\\", r"\\")
         d.append(json.loads(json_acceptable_string,object_pairs_hook=OrderedDict))
     return d
 
@@ -103,7 +103,7 @@ def deal_missing_operations(newdicts,keyword):
         newdicts.update({"op":"custom/flag"})
     elif keyword.startswith("Star"):
         newdicts.update({"op":"custom/star"})
-    newdicts={"operation":newdicts}
+    # newdicts={"operation":newdicts}
     return newdicts
 
 
@@ -190,10 +190,10 @@ def extract_history(input_file):
             # Flag:"description": "Flag row 2"
             keyword=dicts['description']
             newdicts=deal_missing_operations(new_dicts,keyword)
-            newdicts.update(dicts)
+            # newdicts.update(dicts)
             complete_Json.append(newdicts)
         else:
-            complete_Json.append(dicts)
+            complete_Json.append(dicts['operation'])
     # store the json file : enhanced recipe
     # json_path='JSON/%s.json'%(raw_input('input the json name:'))
     # store_JSON(complete_Json,json_path)
@@ -215,10 +215,11 @@ def main():
     :return:
 
     """
-    test_file = "../test_files/Tutorial_OR.openrefine.tar.gz"
-    data_json=extract_history(test_file)
+    test_file = "../test_files/demo2_part1.openrefine.tar.gz"
+    data_json=extract_history(test_file)[0]
     store_JSON(data_json,'../JSON/Enhanced_Recipe.json')
     # print(json.dump(recipe))
+
 
 
 if __name__=='__main__':

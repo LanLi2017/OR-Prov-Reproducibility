@@ -1,235 +1,258 @@
 [
-  [
-    {
-      "id": 1547782431847, 
-      "description": "Text transform on 15923 cells in column sponsor: value.toLowercase()", 
-      "time": "2019-01-18T03:25:38Z", 
-      "operation": {
-        "op": "core/text-transform", 
-        "description": "Text transform on cells in column sponsor using expression value.toLowercase()", 
-        "engineConfig": {
-          "facets": [], 
-          "mode": "row-based"
-        }, 
-        "columnName": "sponsor", 
-        "expression": "value.toLowercase()", 
-        "onError": "set-to-blank", 
-        "repeat": false, 
-        "repeatCount": 10
-      }
-    }, 
-    {
-      "id": 1547784200389, 
-      "description": "Mass edit 10 cells in column event", 
-      "time": "2019-01-18T03:48:10Z", 
-      "operation": {
-        "op": "core/mass-edit", 
-        "description": "Mass edit cells in column event", 
-        "engineConfig": {
-          "facets": [], 
-          "mode": "row-based"
-        }, 
-        "columnName": "event", 
-        "expression": "value", 
-        "edits": [
-          {
-            "fromBlank": false, 
-            "fromError": false, 
-            "from": [
-              "FOURTH ANNUAL DINNER", 
-              "Fourth Annual Dinner"
-            ], 
-            "to": "FOURTH ANNUAL DINNER"
-          }
-        ]
-      }
-    }, 
-    {
-      "operation": {
-        "row": "3", 
-        "cell": "3", 
-        "old": "{\"v\":\"LUNCH;\"}", 
-        "new": "{\"v\":\"tutorial_menu\"}", 
-        "op": "custom/single-edit"
-      }, 
-      "description": "Edit single cell on row 4, column event", 
-      "id": 1547837318975, 
-      "time": "2019-01-18T18:37:39Z"
-    }, 
-    {
-      "id": 1547837576816, 
-      "description": "Split 15984 cell(s) in column sponsor into several columns by separator", 
-      "time": "2019-01-18T18:47:30Z", 
-      "operation": {
-        "op": "core/column-split", 
-        "description": "Split column sponsor by separator", 
-        "engineConfig": {
-          "facets": [], 
-          "mode": "row-based"
-        }, 
-        "columnName": "sponsor", 
-        "guessCellType": true, 
-        "removeOriginalColumn": true, 
-        "mode": "separator", 
-        "separator": ",", 
-        "regex": false, 
-        "maxColumns": 0
-      }
-    }, 
-    {
-      "id": 1547838693019, 
-      "description": "Create new column news based on column event by filling 7913 rows with cells.date.value + cells.event.value", 
-      "time": "2019-01-18T18:58:46Z", 
-      "operation": {
-        "op": "core/column-addition", 
-        "description": "Create column news at index 8 based on column event using expression cells.date.value + cells.event.value", 
-        "engineConfig": {
-          "facets": [], 
-          "mode": "row-based"
-        }, 
-        "newColumnName": "news", 
-        "columnInsertIndex": 8, 
-        "baseColumnName": "event", 
-        "expression": "cells.date.value + cells.event.value", 
-        "onError": "set-to-blank"
-      }
-    }, 
-    {
-      "id": 1547838538300, 
-      "description": "Move column date to position 10", 
-      "time": "2019-01-18T19:04:33Z", 
-      "operation": {
-        "op": "core/column-move", 
-        "description": "Move column date to position 10", 
-        "columnName": "date", 
-        "index": 10
-      }
-    }, 
-    {
-      "id": 1547839688022, 
-      "description": "Rename column location to position", 
-      "time": "2019-01-18T19:12:24Z", 
-      "operation": {
-        "op": "core/column-rename", 
-        "description": "Rename column location to position", 
-        "oldColumnName": "location", 
-        "newColumnName": "position"
-      }
-    }, 
-    {
-      "operation": {
-        "row": "1", 
-        "newFlagged": "true", 
-        "oldFlagged": "false", 
-        "op": "custom/flag"
-      }, 
-      "description": "Flag row 2", 
-      "id": 1547839493103, 
-      "time": "2019-01-18T19:13:23Z"
-    }, 
-    {
-      "operation": {
-        "row": "1", 
-        "newStarred": "true", 
-        "oldStarred": "false", 
-        "op": "custom/star"
-      }, 
-      "description": "Star row 2", 
-      "id": 1547839841238, 
-      "time": "2019-01-18T19:14:06Z"
-    }, 
-    {
-      "id": 1547840220682, 
-      "description": "Blank down 955 cells in column event", 
-      "time": "2019-01-18T19:23:25Z", 
-      "operation": {
-        "op": "core/blank-down", 
-        "description": "Blank down cells in column event", 
-        "engineConfig": {
-          "facets": [], 
-          "mode": "row-based"
-        }, 
-        "columnName": "event"
-      }
-    }, 
-    {
-      "id": 1547840146945, 
-      "description": "Fill down 0 cells in column location_type", 
-      "time": "2019-01-18T19:23:57Z", 
-      "operation": {
-        "op": "core/fill-down", 
-        "description": "Fill down cells in column location_type", 
-        "engineConfig": {
-          "facets": [], 
-          "mode": "row-based"
-        }, 
-        "columnName": "location_type"
-      }
-    }, 
-    {
-      "operation": {
-        "row": "1", 
-        "cell": "3", 
-        "old": "{\"v\":\"[DINNER]\"}", 
-        "new": "{\"v\":\"Abendessen\"}", 
-        "op": "custom/single-edit"
-      }, 
-      "description": "Edit single cell on row 2, column event", 
-      "id": 1555525174015, 
-      "time": "2019-04-17T18:07:45Z"
-    }
-  ], 
   {
-    "encodingConfidence": 0, 
-    "license": "", 
-    "password": "", 
-    "name": "Tutorial_OR", 
-    "contributors": "", 
-    "created": "2019-04-20T22:38:19Z", 
-    "description": "", 
-    "creator": "", 
-    "customMetadata": {}, 
-    "modified": "2019-04-21T18:49:14Z", 
-    "encoding": "UTF-8", 
-    "rowCount": 17545, 
-    "version": "", 
-    "preferences": {
-      "entries": {
-        "scripting.expressions": {
-          "top": 100, 
-          "list": [], 
-          "class": "com.google.refine.preference.TopList"
-        }, 
-        "scripting.starred-expressions": {
-          "top": 2147483647, 
-          "list": [], 
-          "class": "com.google.refine.preference.TopList"
-        }
-      }
+    "op": "core/text-transform", 
+    "description": "Text transform on cells in column sponsor using expression value.toLowercase()", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
     }, 
-    "title": "", 
-    "importOptionMetadata": [
+    "columnName": "sponsor", 
+    "expression": "value.toLowercase()", 
+    "onError": "keep-original", 
+    "repeat": false, 
+    "repeatCount": 10
+  }, 
+  {
+    "op": "core/mass-edit", 
+    "description": "Mass edit cells in column sponsor", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "sponsor", 
+    "expression": "value", 
+    "edits": [
       {
-        "processQuotes": true, 
-        "fileSource": "Dataset/Menu.csv", 
-        "storeBlankRows": true, 
-        "storeEmptyStrings": true, 
-        "ignoreLines": -1, 
-        "projectName": "Tutorial_OR", 
-        "limit": -1, 
-        "skipDataLines": 0, 
-        "separator": ",", 
-        "trimStrings": false, 
-        "linesPerRow": 1, 
-        "guessCellValueTypes": false, 
-        "storeBlankCellsAsNulls": true, 
-        "includeFileSources": false, 
-        "headerLines": 1
+        "fromBlank": false, 
+        "fromError": false, 
+        "from": [
+          "red star line - antwerpen - ny", 
+          "red star line - antwerpen -ny", 
+          "red star line - antwerpen ny", 
+          "red star line -antwerpen ny", 
+          "red star line - antwerpen  - ny", 
+          "red star line - antwerpen  ny", 
+          "red star line -antwerpen - ny", 
+          "red star line -antwerpen -ny", 
+          "red star line- antwerpen  ny", 
+          "red star line- antwerpen -ny"
+        ], 
+        "to": "red star line - antwerpen - ny"
+      }, 
+      {
+        "fromBlank": false, 
+        "fromError": false, 
+        "from": [
+          "norddeutscher lloyd bremen", 
+          "norddeutscher lloyd - bremen", 
+          "norddeutscher lloyd  bremen", 
+          "norddeutscher lloyd bremen;", 
+          "norddeutscher lloyd, bremen", 
+          "bremen norddeutscher lloyd", 
+          "norddeutscher lloyd -  bremen", 
+          "norddeutscher lloyd -bremen"
+        ], 
+        "to": "norddeutscher lloyd bremen"
+      }, 
+      {
+        "fromBlank": false, 
+        "fromError": false, 
+        "from": [
+          "fifth avenue hotel", 
+          "(fifth avenue hotel)", 
+          "(fifth avenue hotel?)", 
+          "fifth avenue hotel (?)", 
+          "(fifth avenue hotel?}", 
+          "fifth avenue hotel;"
+        ], 
+        "to": "fifth avenue hotel"
       }
-    ], 
-    "homepage": "", 
-    "image": "", 
-    "tags": [], 
-    "subject": ""
+    ]
+  }, 
+  {
+    "op": "core/text-transform", 
+    "description": "Text transform on cells in column event using expression value.trim()", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "event", 
+    "expression": "value.trim()", 
+    "onError": "keep-original", 
+    "repeat": false, 
+    "repeatCount": 10
+  }, 
+  {
+    "op": "core/text-transform", 
+    "description": "Text transform on cells in column event using expression value.toLowercase()", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "event", 
+    "expression": "value.toLowercase()", 
+    "onError": "keep-original", 
+    "repeat": false, 
+    "repeatCount": 10
+  }, 
+  {
+    "op": "core/mass-edit", 
+    "description": "Mass edit cells in column venue", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "venue", 
+    "expression": "value", 
+    "edits": [
+      {
+        "fromBlank": false, 
+        "fromError": false, 
+        "from": [
+          "SOC;", 
+          "SOC", 
+          "[SOC?];", 
+          "SOC(?);", 
+          "SOC.", 
+          "[SOC]", 
+          "SOC?;", 
+          "(SOC);", 
+          "(SOC?)", 
+          "(SOC?);", 
+          "SOC (?);", 
+          "SOC(?):", 
+          "[?SOC];", 
+          "[SOC;]", 
+          "[SOC?]", 
+          "[SOC];"
+        ], 
+        "to": "SOC;"
+      }, 
+      {
+        "fromBlank": false, 
+        "fromError": false, 
+        "from": [
+          "GOVT;", 
+          "GOVT(?);", 
+          "GOV'T;", 
+          "[GOVT?];", 
+          "GOV'T", 
+          "GOV'T.", 
+          "GOVT", 
+          "GOVT?;", 
+          "[GOVT?]", 
+          "[GOVT];"
+        ], 
+        "to": "GOVT;"
+      }, 
+      {
+        "fromBlank": false, 
+        "fromError": false, 
+        "from": [
+          "COM", 
+          "COM.", 
+          "[COM]", 
+          "(COM?);", 
+          "COM(?);", 
+          "COM.;", 
+          "[COM?];", 
+          "[COM}"
+        ], 
+        "to": "COM"
+      }, 
+      {
+        "fromBlank": false, 
+        "fromError": false, 
+        "from": [
+          "PROF;", 
+          "PROF", 
+          "PROF(?);", 
+          "PROF.", 
+          "PROF?;", 
+          "[PROF?];", 
+          "[PROF]"
+        ], 
+        "to": "PROF;"
+      }
+    ]
+  }, 
+  {
+    "op": "core/column-split", 
+    "description": "Split column physical_description by separator", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "physical_description", 
+    "guessCellType": true, 
+    "removeOriginalColumn": true, 
+    "mode": "separator", 
+    "separator": ";", 
+    "regex": false, 
+    "maxColumns": 0
+  }, 
+  {
+    "op": "core/text-transform", 
+    "description": "Text transform on cells in column call_number using expression value.toDate()", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "call_number", 
+    "expression": "value.toDate()", 
+    "onError": "keep-original", 
+    "repeat": false, 
+    "repeatCount": 10
+  }, 
+  {
+    "op": "core/mass-edit", 
+    "description": "Mass edit cells in column event", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "event", 
+    "expression": "value", 
+    "edits": [
+      {
+        "fromBlank": false, 
+        "fromError": false, 
+        "from": [
+          "dinner", 
+          "[dinner]", 
+          "(dinner)", 
+          "dinner;", 
+          "dinner (?)", 
+          "dinner(?)", 
+          "[dinner?]", 
+          "(?dinner?)", 
+          "[?dinner?]", 
+          "[dinner ?]", 
+          "dinner,", 
+          "dinner?"
+        ], 
+        "to": "dinner"
+      }
+    ]
+  }, 
+  {
+    "row": "8643", 
+    "cell": "3", 
+    "old": "{\"v\":\"middag-dinner\"}", 
+    "new": "{\"v\":\"middag/dinner\"}", 
+    "op": "custom/single-edit"
+  }, 
+  {
+    "op": "core/text-transform", 
+    "description": "Text transform on cells in column id using expression value.toNumber()", 
+    "engineConfig": {
+      "facets": [], 
+      "mode": "row-based"
+    }, 
+    "columnName": "id", 
+    "expression": "value.toNumber()", 
+    "onError": "keep-original", 
+    "repeat": false, 
+    "repeatCount": 10
   }
 ]
