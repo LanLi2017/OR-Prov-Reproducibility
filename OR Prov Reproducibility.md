@@ -100,7 +100,7 @@ Script done on Sun Apr 28 16:49:01 2019
 1). Create a new OpenRefine project (P7) importing test data set (T).<br>
 2). Perform a few data cleaning operations where one operaiton is non-generalizable.<br>
 3). View the operation <strong>history</strong> (H1).<br>
-<img src="https://lh3.googleusercontent.com/5GKiJBxJK0toZFmimXxDaZfG-P2eZoNJ78B5WTa2sNgJfPjnsrSt2ez0E8fFcM66XIXPEzkoPGTz" alt="enter image description here" title="Operation History Demo2 part1"><br>
+<img src="https://lh3.googleusercontent.com/5GKiJBxJK0toZFmimXxDaZfG-P2eZoNJ78B5WTa2sNgJfPjnsrSt2ez0E8fFcM66XIXPEzkoPGTz=s8000" alt="enter image description here" title="Operation History Demo2 part1"><br>
 4). Export the operation history as a recipe (<a href="https://drive.google.com/open?id=1TKVte-JiNCXJOu1QC6n32bj8Mwg5t3u7">R</a>) via copy and paste to a file.<br>
 5). Export the project as archive <a href="https://drive.google.com/open?id=1UvHgpBUplqr-rh-R7UL6IHxiiAHXYHxh">A2</a>.<br>
 6). Run <strong>Complete-History-Extractor</strong> script with A2 as input, and get as output JSON file representing the extended recipe (<a href="https://drive.google.com/open?id=12SrTmNmRQUTpQi0g8emeMZzuj8l5HmvQ">ER</a>) associated with A2.<br>
@@ -126,5 +126,5 @@ Script done on Mon Apr 29 15:33:39 2019
 <p>4). After a refresh of the OR web interface.<br>
 5). Export the cleaned data set (C2)<br>
 6). Show that C1 and C2 are <strong>same</strong> (data cleaning <strong>was</strong> reproduced)<br>
-<img src="https://lh3.googleusercontent.com/6bkXIHdUiOeMu2M0UXZGODABHAeAQFavWeV6cCgob3wyX5egnjqQPP1Z9opxY-4jRwTRNsx9pI8s=s0" alt="enter image description here" title="test"></p>
+<img src="https://lh3.googleusercontent.com/9ZwlG02jc6tLy-wEocLF50hTed1ByYy-uzAgDHOvc98hHkEcZunrnLdMiQUOk_w_-jzzFklRTh2r=s8000" alt="enter image description here"></p>
 
