@@ -43,10 +43,8 @@ Script done on Sun Apr 28 17:10:07 2019
 1). Create new OpenRefine project (P3) importing test data set (T).<br>
 2). Perform a few data cleaing operations where all operations are generalizable.<br>
 <img src="https://lh3.googleusercontent.com/81QHE_FdPgmVXTWfu_U_WHW94-zKaQSYljUA8LRRhX1yvNnbhKoHiHrMGQ-OHTab_g77uXIHUQo" alt="enter image description here" title="Generalized operations"><br>
-3). Export the operation history and save as a <strong>recipe</strong> (<a href="https://drive.google.com/open?id=18Cb606OWsgt11sn5Kwr6DcBzfsP4_xFJ"><br>
-</a>) via copy and paste to a file.<br>
-4). Export the cleaned data set (<a href="https://drive.google.com/open?id=14NaoCElH9Qr5Aaw8YaPDC8gHoprz8MTY"><br>
-</a>)</p>
+3). Export the operation history and save as a <strong>recipe</strong> (<a href="https://drive.google.com/open?id=18Cb606OWsgt11sn5Kwr6DcBzfsP4_xFJ">R</a>) via copy and paste to a file.<br>
+4). Export the cleaned data set (<a href="https://drive.google.com/open?id=14NaoCElH9Qr5Aaw8YaPDC8gHoprz8MTY">C3</a>)</p>
 <p>Part 2:<br>
 1). Create a new OpenRefine project (P4) importing test data set (T).<br>
 2). Execute <strong>recipe</strong> R through the OR interface.<br>
