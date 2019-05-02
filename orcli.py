@@ -14,7 +14,7 @@ class ORCLI(object):
     def __init__(self):
         parser = argparse.ArgumentParser(
             description='OpenRefine command line interface Demo',
-            usage='''orcli <command> [<args>]
+            usage='''orcli.py <command> [<args>]
 
         orcli commands are:        
            extract          Extract enhanced recipe from OpenRefine project file
@@ -140,7 +140,7 @@ class ORCLI(object):
 
     def compare(self):
         parser = argparse.ArgumentParser(
-            description='''Command orcli compare <file1> <file2>
+            description='''Command orcli.py compare <file1> <file2>
             Compare two OpenRefine output files <file1> and <file2>''')
         #args = parser.parse_args(sys.argv[2:])
         #print(sys.argv[2:])
@@ -154,7 +154,7 @@ class ORCLI(object):
 
     def compare_recipes(self):
         parser = argparse.ArgumentParser(
-            description='''Command orcli compare_recipes <file1> <file2>
+            description='''Command orcli.py compare_recipes <file1> <file2>
             Compare two OpenRefine recipe files <file1> and <file2>''')
         #args = parser.parse_args(sys.argv[2:])
         #print(sys.argv[2:])
