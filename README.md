@@ -1,5 +1,10 @@
 # OR-Prov-Reproducibility
 
+Clone this Github Project with recursive command
+```
+$ git clone --recursive https://github.com/LanLi2017/OR-Prov-Reproducibility
+```
+
 This experiment modules use the enhanced/customized refine-client-py OpenRefine Client API based on python 2.7, 
 you can install the module by executing
 ```
