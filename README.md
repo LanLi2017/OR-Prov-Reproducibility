@@ -5,6 +5,24 @@ Clone this Github Project with recursive command
 $ git clone --recursive https://github.com/LanLi2017/OR-Prov-Reproducibility
 ```
 
+Change directory to the Github source code folder
+```
+cd OR-Prov-Reproducibility
+```
+
+Create a python2 virtual environment, this will create conda virtual environment directory (or-venv) on the folder
+and activate the virtual environment
+
+```
+conda create --prefix or-venv python=2.7
+source activate or-venv
+```
+
+Install requirements
+```
+pip install -r requirements.txt
+```
+
 This experiment modules use the enhanced/customized refine-client-py OpenRefine Client API based on python 2.7, 
 you can install the module by executing
 ```
