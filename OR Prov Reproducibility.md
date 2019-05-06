@@ -4,119 +4,317 @@
 ---
 
 <h1 id="openrefine-reproducibility-demo">OpenRefine Reproducibility Demo</h1>
-<p>These four demos are to test the OpenRefine <strong>reproducibility</strong></p>
+<p>These four demos are to test the OpenRefine <strong>reproducibility</strong><br>
+Dataset is first 5 rows of Menu.csv from <a href="http://menus.nypl.org/data">New York Public Library</a>.<br>
+<img src="https://lh3.googleusercontent.com/UZI3YMHsf9V20E0kv7Qrjh-d4D92Hnoi1SolehurTe1pjlkElsQJHoY6gozs9yzFCOPY6qwNYLzM=s8000" alt="enter image description here" title="Dataset for demo"></p>
 <h2 id="demo-0">Demo 0</h2>
 <p>This demo is supported by OpenRefine natively, should always work.<br>
 Part 1:<br>
-1). Create new OpenRefine project (P1) importing test data set (T).<br>
-<img src="https://lh3.googleusercontent.com/9We-m-vdid5iYV3d-RfToCDOPfXGaXrqPS4jik8Bhn9mJkO5B6PgZnEeXWsPz55kfC4nrPEuNyc=s8000" alt="Data set is from Menu.csv version 04/16/19 from New York Public Library " title="Create project P1"><br>
+1). Create new OpenRefine project (P1) importing test data set (T).</p>
+<p><img src="https://lh3.googleusercontent.com/T1AhCiSnEZbv8l6br8VOiP5Vm1L44bJyZbM7Iopn7_faRfmjMcRSjg1uVvU2X9WzX1YpHhkmGw2x=s8000" alt="enter image description here" title="demo0_part1_initial"><br>
 2). Perform a few data cleaning operations, both generalizable and non-generalizable.<br>
-<img src="https://lh3.googleusercontent.com/4cvlYjKTXMBeKutAfOfhKC7pXWF6ClpoPEWHwrXA_vyPZ3PjSHkM90eJJ4IIUVfOnQA_ZgbAhp0=s8000" alt="enter image description here" title="Perform data cleaning operations"><br>
-3). View the operation <strong>history</strong>(H1)<br>
-<img src="https://lh3.googleusercontent.com/_oXqoZYRCPsmFRGamo72RmeCwOacojL08GH6LDIkv4wYs9jR-OfvCvWwBYEE-HTy9no-sAAH4sA=s8000" alt="enter image description here" title="Extract Operation History"><br>
-4). Undo all data cleaing steps, then redo all the operations.<br>
-5). Export the cleaned data set (<a href="https://drive.google.com/open?id=1zg3jDYuXNblminVmdQ5VEJyXrGdKFziW">C1</a>).<br>
-6). Export the project and save as an archive (<a href="https://drive.google.com/open?id=1RfEqHDCGtii3R3XD_BDHZMNwVzy-NRZq">A</a>), a tarball.</p>
+<img src="https://lh3.googleusercontent.com/s3KDyv_mM1VK43xoB-IJiy3EnWxbWTYkRMdaz-naA_myIGek2m2vqujPPVr-TyhF19BTrpG7iN2R=s8000" alt="enter image description here" title="demo0_part1_operations"></p>
+<p>3). View the operation <strong>history</strong>(H1)<br>
+<img src="https://lh3.googleusercontent.com/VRjrxEMg6JbuI7BNf-SeNqKka6wC4Plih8_9dQdYAqWTg1UZ0rAhjFCZ-Cm0XUd1R05grC5Kr9SY=s1000" alt="enter image description here" title="demo0_part1_OH"><br>
+4). Undo all data cleaing steps, then redo all the operations.</p>
+<p>5). Export the cleaned data set C1.<br>
+<img src="https://lh3.googleusercontent.com/zfr5RqXEC8UaDMm5dk0lKgCsydAUETqq7YGLYmlvzEqS3TebX6KU6RDrhC4XUmhmEY0dMCmFmx4Q=s8000" alt="enter image description here" title="demo0_part1_output"><br>
+6). Export the project and save as an archive A, a tarball.</p>
 <p>Part 2:<br>
 1). Create a new OpenRefine project (P2), importing the exported archive (A).<br>
-<img src="https://lh3.googleusercontent.com/vKUv6TVcxbL7CVPRxnC3Ck6SQSCEIE0I-Rv9XqaMslAGikVCTaa1xiJXzoc_QdDUq9jNM8EFSSM=s8000" alt="Create a new project by imporing archive(A) from part1 of demo0" title="create a new project P2"><br>
+<img src="https://lh3.googleusercontent.com/MI0ZK7qxj9sVt62xFrKK03BRHUMusXck5mWmciPvZzFJ5gpPK0y2sJ2iyqW4XCSKiIi8qpV8OANX=s8000" alt="enter image description here" title="demo0_part2 import archive"><br>
 2). View the operation <strong>history</strong> (H2) and check that it looks like H1<br>
-<img src="https://lh3.googleusercontent.com/8Fafs_2agkPlaVQ84AUTlV6sehoP0C0x2WtqE5mnG0IouWNtsQBxZRMtG_TSOabr4SeThjXMgUY=s8000" alt="H1 and H2 are the same" title="Compare H1 and H2"><br>
+<img src="https://lh3.googleusercontent.com/2Ok_a9JlVCtu8w3PHmEVpSu-R60rGnsjLUmzfPr68D-yBjPbg8Q33iwKb6SROsJT3_Mi4jaDDGvF=s8000" alt="enter image description here" title="compare OH1 and OH2"><br>
 3). Undo all data cleaning steps, then redo all the operations.<br>
-4). Export the cleaned data set (<a href="https://drive.google.com/open?id=1cN2svCY3V2vyNblXzPB07MSLvqPMZwOJ">C2</a>).<br>
+4). Export the cleaned data set C2.<br>
+<img src="https://lh3.googleusercontent.com/xveKW4Y6GjWHubejCSMC1k9svbxYoHosII0NJrhkSd-s3WeJlQXT2UcLxIF04b-YjgMEhAQ18d9t=s8000" alt="enter image description here" title="demo0_part2_output"><br>
 5). Show that C1 and C2 are the <strong>same</strong>.</p>
-<pre><code>script Diff_C1_C2.log
-</code></pre>
-<p>Get a <a href="https://drive.google.com/open?id=16qeTfN9Cx9QGeRkyn2-tXsntcVyr0t90">log</a> file :</p>
-<pre><code>Script started on Sun Apr 28 17:09:01 2019
- [?1034hbash-3.2$ diff demo_0_1/C1_cleaned_Dataset.csv demo0_2  [K  [K  [K_0_2/Openrefine_demo0_2_C2.cs 
-v &gt;&gt; Diff_C1_C2.txt
-bash-3.2$ exit
-exit
+<pre class=" language-console"><code class="prism  language-console">wirelessprv-10-194-219-248:demo_all barbaralee$  diff demo0_part1/demo0_part1_partMenu.csv demo0_part2/demo0_part2.csv
 
-Script done on Sun Apr 28 17:10:07 2019
+wirelessprv-10-194-219-248:demo_all barbaralee$
 </code></pre>
-<p>And the difference of C1 and C2 are record in <a href="https://drive.google.com/open?id=1mNd6cVXzweOuqE0rZVuLmyb7pKM0y1if">Diff_C1_C2.txt</a>, where it shows C1 and C2 are the same</p>
+<p>We use <em>diff</em> to test C1 and C2, and there is no return here. Thus, C1 and C2 are the same.</p>
 <h2 id="demo-1a">Demo 1a</h2>
 <p>This demo shows that OpenRefine recipes suffice when all operations are <strong>generalizable</strong>.</p>
 <p>Part 1:<br>
 1). Create new OpenRefine project (P3) importing test data set (T).<br>
+<img src="https://lh3.googleusercontent.com/SyVrZ3nsG2R2LxpsMBmqlNPUWX9smF_woDehrxaI-jw_DKof-yJOw38sTv603a90XQd4BlX9m3aP=s8000" alt="enter image description here" title="demo1a_part1 initial"><br>
 2). Perform a few data cleaing operations where all operations are generalizable.<br>
-<img src="https://lh3.googleusercontent.com/81QHE_FdPgmVXTWfu_U_WHW94-zKaQSYljUA8LRRhX1yvNnbhKoHiHrMGQ-OHTab_g77uXIHUQo=s8000" alt="enter image description here" title="Generalized operations"><br>
-3). Export the operation history and save as a <strong>recipe</strong> (<a href="https://drive.google.com/open?id=18Cb606OWsgt11sn5Kwr6DcBzfsP4_xFJ">R</a>) via copy and paste to a file.<br>
-4). Export the cleaned data set (<a href="https://drive.google.com/open?id=14NaoCElH9Qr5Aaw8YaPDC8gHoprz8MTY">C3</a>)</p>
+<img src="https://lh3.googleusercontent.com/C1dOSuBociCHFCbGQ1Bsu1pqCOVZkMetgyBFwpPZstH1TVUu1ORJetWiIdYhTXVtr7bXmxKCuhc7=s8000" alt="enter image description here" title="demo1a_part1 OH"><br>
+3). Export the operation history and save as a <strong>recipe</strong> ®.</p>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column id using expression value.toNumber()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"id"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toNumber()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column sponsor using expression value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"sponsor"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column event using expression value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"event"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column venue using expression value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"venue"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/column-split"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Split column physical_description by separator"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"physical_description"</span><span class="token punctuation">,</span>
+    <span class="token string">"guessCellType"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">"removeOriginalColumn"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"separator"</span><span class="token punctuation">,</span>
+    <span class="token string">"separator"</span><span class="token punctuation">:</span> <span class="token string">";"</span><span class="token punctuation">,</span>
+    <span class="token string">"regex"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"maxColumns"</span><span class="token punctuation">:</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre>
+<p>4). Export the cleaned data set (C3).<br>
+<img src="https://lh3.googleusercontent.com/Y24T2WT4J6FTDr4A84eacUVD4JxSQdMaKfWEey68MhKW5odBg8h0sV4fIKgiAv6HbgsdMhi_VjyQ=s8000" alt="enter image description here" title="demo1a output"></p>
 <p>Part 2:<br>
 1). Create a new OpenRefine project (P4) importing test data set (T).<br>
+<img src="https://lh3.googleusercontent.com/onQUOKBdadZ9s1gwkGBJ-Ix1_Y4uxJfxYV_riklfANye0AV201IP3YHX8GxzSSppZLGcvVLxSEio=s8000" alt="enter image description here" title="demo1a_part2"><br>
 2). Execute <strong>recipe</strong> R through the OR interface.<br>
-<img src="https://lh3.googleusercontent.com/jQTMQ53cVJVoUwtw5zWB-OJN3D_nsrf-VwVZGy2Wt2e806K6VM-xTBgFy7vrgxdPDKuNWNrb7V8=s8000" alt="enter image description here" title="Apply recipe R to Project P4"><br>
-3). Export the cleaned data set (<a href="https://drive.google.com/open?id=1norLAD0mhMzlYtmDOrkLv8vhyWFnLCwO">C4</a>)<br>
-4). Show that C3 and C4 are the <strong>same</strong> (data cleaning was reproduced).</p>
-<pre><code>script Diff_C3_C4.log
-</code></pre>
-<p>Get a <a href="https://drive.google.com/open?id=1Ga9Zx3CMZqUX2YFYr9s-c_X1VTPkZVRe">log</a> file:</p>
-<pre><code>Script started on Sun Apr 28 16:48:39 2019
- [?1034hbash-3.2$ diff  [K  [K  [K  [Kdiff demo_1a_2/Openrefine_1a_2_C4.csv demo_1a_1/openrefine_demo1a1_C3. 
-csv &gt;&gt; Diff_C3_C4.txt
-bash-3.2$ exit
-exit
+<img src="https://lh3.googleusercontent.com/qgW3QTBfm4k5HbMFZe10TXlRy-flygKVPI9VdNfZUfpAb6RC5xN2BtGPokwJci-ZOU5Xz_QLhhXS=s8000" alt="enter image description here" title="demo 1a apply"><br>
+3). Export the cleaned data set C4.<br>
+<img src="https://lh3.googleusercontent.com/cq_BLpIDGk5b7QvWWqoxlLCxPbeM2SerciZHv4kiWM4IYO870dpGQn2VWj_EiVUUqd2vutqAG7KZ=s8000" alt="enter image description here" title="demo 1a part2 output"><br>
+4). Show that C3 and C4 are the <strong>same</strong> (data cleaning was reproduced).<br>
+Here C3 is  demo1a_part1_partMenu.csv file, C4 is demo1a_part2_partMenu.csv file. We use <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>i</mi><mi>f</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">diff</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.88888em; vertical-align: -0.19444em;"></span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right: 0.10764em;">f</span><span class="mord mathit" style="margin-right: 0.10764em;">f</span></span></span></span></span> to test the difference between these two files.</p>
+<pre class=" language-console"><code class="prism  language-console">wirelessprv-10-194-219-248:demo_all barbaralee$ diff demo1a_part1/demo1a_part1_partMenu.csv demo1a_part2/demo1a_part2_partMenu.csv
 
-Script done on Sun Apr 28 16:49:01 2019
+wirelessprv-10-194-219-248:demo_all barbaralee$
 </code></pre>
-<p>And the diffrences of C3 and C4 are recorded in <a href="https://drive.google.com/open?id=1wSQFwzV6jsNqXuOTOKIfqCS_gvDYFWCi">Diff_C3_C4.txt</a>, where it shows that C3 and C4 are the same.</p>
+<p>There is no difference between C3 and C4</p>
 <h2 id="demo-1b">Demo 1b</h2>
 <p>This demo shows that OpenRefine recipes do not suffice when operations <strong>not generalizable</strong>.</p>
 <p>Part 1:<br>
 1). Create a new OpenRefine project (P5) importing test data set (T).<br>
+<img src="https://lh3.googleusercontent.com/jP9h-_SyJ_0teAiaFMqv2hFISUA24sM1EB5k71DGXFOIWPHzWrIRDa3rDyw7jqV6LuQQlfFFleug=s8000" alt="enter image description here" title="demo1b part1 initial"><br>
 2). Perform a few data cleaning operations where <strong>one</strong> operation is non-generalizable.<br>
 3). View the operation <strong>history</strong> (H1).<br>
-<img src="https://lh3.googleusercontent.com/SCY0kpxeGMz00ZGdzteDGaVzCXZlkhcVqj4rBPiTUbJ0A08NoZtAg4TJdkivo3QvF5wjWl3k15Me=s8000" alt="enter image description here" title="Non-generalizable Operation"><br>
-4). Export the operation <strong>history</strong> and save as a <strong>recipe</strong> (<a href="https://drive.google.com/open?id=1lZ0c_hBq6ISoklrqpLRvgK1YCsfnCxYT">R</a>) via copy and paste to a file.<br>
-5). Export the cleaned data set (<a href="https://drive.google.com/open?id=1bUdEoTALvkAOr71dWgZBRpWGnMrHZOE5">C1</a>)</p>
+<img src="https://lh3.googleusercontent.com/seOXIp-kvEIbo8BnQi-aoCpGyaNf9U4h7esUwfS1P3dcZ3DVwLh34vFOXlFD7cyI0bxl9EdD6zPM=s8000" alt="enter image description here" title="demo 1b part1 OH"><br>
+4). Export the operation <strong>history</strong> and save as a <strong>recipe</strong> R via copy and paste to a file.</p>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column id using expression value.toNumber()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"id"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toNumber()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column sponsor using expression value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"sponsor"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column event using expression value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"event"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column venue using expression value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"venue"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/column-split"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Split column physical_description by separator"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"physical_description"</span><span class="token punctuation">,</span>
+    <span class="token string">"guessCellType"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">"removeOriginalColumn"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"separator"</span><span class="token punctuation">,</span>
+    <span class="token string">"separator"</span><span class="token punctuation">:</span> <span class="token string">";"</span><span class="token punctuation">,</span>
+    <span class="token string">"regex"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"maxColumns"</span><span class="token punctuation">:</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre>
+<p>5). Export the cleaned data set C1.<br>
+<img src="https://lh3.googleusercontent.com/qvziV8seQnPjbQIGrywMYalExQtbiv8WMwzXloXTgWSqxvWB3OkZiyNZxqSpJHejCVr_YltyFcMB=s8000" alt="enter image description here" title="demo1b part1 output"></p>
 <p>Part 2:<br>
 1). Create a new OpenRefine project (P6) importing test data set (T).<br>
+<img src="https://lh3.googleusercontent.com/gXTMZ59ei1BlwlJqDeLFcoheGsdQgjiymK3qCqvgJhiMWDl-7CFg-Us8Yzc6OEWR_DEyKtKmTtW9=s8000" alt="enter image description here" title="demo1b part2 initial"><br>
 2). Execute <strong>recipe</strong> R through the OR interface.<br>
-<img src="https://lh3.googleusercontent.com/QksTjtBgqkNZKbL4DqXjprG4EyMP7Bpw88Kc0WQHYfJF0BLtfOwcFKJbLVYz9tEfXlGLfo5pq6QQ=s8000" alt="enter image description here" title="Apply R to P2"><br>
-2). View the operation <strong>history</strong> (H2) and note that H2 lacks the non-generalizable steps from H1.<br>
-<img src="https://lh3.googleusercontent.com/j-ibXPDJ_zEQNdpSDw2mmffdq5tMu_dJJ1T_CgKQCyJ7OHBSvVe6GKFF6BjlA2JiefhU1XMa_c6-=s8000" alt="Missing operation for single edit" title="Compare H1_H2"><br>
-3). Export the cleaned data set (<a href="https://drive.google.com/open?id=10YyART-zao33U4hYA_ormS0c8cxfibeB">C2</a>)<br>
-4). Show that C1 and C2 are <strong>different</strong> (data cleaning <strong>not</strong> reproduced)</p>
-<pre><code>script Diff_demo1b_C1_C2.log
-</code></pre>
-<p>Get a <a href="https://drive.google.com/open?id=1aKeOSRXnLBnItij4xHPVGcz24Dby4z8Y">log</a> file:</p>
-<pre><code> Script started on Mon Apr 29 13:57:45 2019
-     [?1034hbash-3.2$ diff downloads/demo1b_part2.csv downloads/demo1b_part1.csv &gt;&gt; Diff_dem 
-    o1b_C1_c  [KC2.txt
-    bash-3.2$
-</code></pre>
-<p>And the difference between C1 and C2 are stored in the <a href="https://drive.google.com/open?id=1bVgzUvtpMqDRic1i03DJXIKCvEZhS7KB">Diff_demo1b_C1_C2.txt</a>, where it shows there is one row are different:</p>
-<pre><code>&lt; 21083,,leonard lewisohn,complimentary dinner to the fellow passengers of the normannia to meet mr. robert m. thompson,private party;,"DELMONICO'S, [NEW YORK]",FOLDER, ILL, 7.5X5.5,,,,,SEE ABOVE EVENT;,FASTENED AT TOP IN TWO PLACES BY RIBBONS; FRENCH MENU; WINES AND LIQUERS,1892-115,,,1891-10-10T00:00:00Z,Leonard Lewisohn,,,,complete,4,28
+<img src="https://lh3.googleusercontent.com/jpu7AD9eQ7fDqAS2OxNnXsUql9OTOKqeGQYq96DR-X3t409dsM4GeJfdLXo0Pvkn0aT6op0Yhnp0=s8000" alt="enter image description here" title="apply OH1 to demo1b part2"><br>
+3). View the operation <strong>history</strong> (H2) and note that H2 lacks the non-generalizable steps from H1.<br>
+Step 4 “Edit single cell on row 2, column event” recorded in H1 disappears in H2.<br>
+<img src="https://lh3.googleusercontent.com/_4pVb62ALjfjM5Xnas19Qp225h89f49GBRFFIGnc9KFaeA0Bpz8TmZDaQK-t9H_jVnuD0h05p139=s8000" alt="enter image description here" title="compare OH1 and OH2"><br>
+3). Export the cleaned data set C2.<br>
+<img src="https://lh3.googleusercontent.com/uFRUDXIkHo091En2uirSMi1ffV4R07xNgwmbH9ziAce8XTavV-7ZbLsNyBb1-JXqZORBS2-eKdEQ=s8000" alt="enter image description here" title="demo 1b part 2 output"><br>
+4). Show that C1 and C2 are <strong>different</strong> (data cleaning <strong>not</strong> reproduced)<br>
+C1 here is demo1b_part1.csv file, C2 is demo1b_part2_partMenu.csv file.</p>
+<pre class=" language-console"><code class="prism  language-console">wirelessprv-10-194-219-248:demo_all barbaralee$ diff demo1b_part1/demo1b_part1.csv demo1b_part2/demo1b_part2_partMenu.csv
+
+3c3
+
+&lt; 1,12464,,republican house,dinner;,commercial,"MILWAUKEE, [WI];",CARD, ILLUS, COL, 7.0X9.0,,EASTER;,"WEDGEWOOD BLUE CARD; WHITE EMBOSSED GREEK KEY BORDER; ""EASTER SUNDAY"" EMBOSSED IN WHITE; VIOLET COLORED SPRAY OF FLOWERS IN UPPER LEFT CORNER;",1900-2825,,,1900-04-15,Republican House,,,,complete,2,34
+
 ---
-&gt; 21083,,leonard lewisohn,complimentary dinner to the fellow passengers of the normannia to meet mr. robert m. thompson,private party,"DELMONICO'S, [NEW YORK]",FOLDER, ILL, 7.5X5.5,,,,,SEE ABOVE EVENT;,FASTENED AT TOP IN TWO PLACES BY RIBBONS; FRENCH MENU; WINES AND LIQUERS,1892-115,,,1891-10-10T00:00:00Z,Leonard Lewisohn,,,,complete,4,28
+
+&gt; 1,12464,,republican house,[dinner],commercial,"MILWAUKEE, [WI];",CARD, ILLUS, COL, 7.0X9.0,,EASTER;,"WEDGEWOOD BLUE CARD; WHITE EMBOSSED GREEK KEY BORDER; ""EASTER SUNDAY"" EMBOSSED IN WHITE; VIOLET COLORED SPRAY OF FLOWERS IN UPPER LEFT CORNER;",1900-2825,,,1900-04-15,Republican House,,,,complete,2,34
 </code></pre>
-<p>The difference occurs in column 5:  column"venue", and one is “private party;” whereas the other is “private party”.  C1 and C2 are different.</p>
+<p>And the difference between C1 and C2 are stored in the column 3 and row 3, where in C1, the value is “dinner;”, but the value in C2 is “[dinner]”.</p>
 <h2 id="demo-2">Demo 2</h2>
 <p>This demo shows augmenting OpenRefine with additional scripts can create “extended”/“completed” recipes that are “fully reproducible”, i.e. will obtain C1=C2 …)</p>
 <p>Part 1:<br>
 1). Create a new OpenRefine project (P7) importing test data set (T).<br>
-2). Perform a few data cleaning operations where one operaiton is non-generalizable.<br>
+<img src="https://lh3.googleusercontent.com/n9o6bpXDTr7gtWKhBdpQV0H6S7XZoo9JzpD9T7AnjD9JIpykC0EnHOA0gaDqQOycmdfkzGqMj2ei=s8000" alt="enter image description here" title="demo2 part1 initial"><br>
+2). Perform a few data cleaning operations where <strong>one</strong> operaiton is non-generalizable.<br>
 3). View the operation <strong>history</strong> (H1).<br>
-<img src="https://lh3.googleusercontent.com/5GKiJBxJK0toZFmimXxDaZfG-P2eZoNJ78B5WTa2sNgJfPjnsrSt2ez0E8fFcM66XIXPEzkoPGTz=s8000" alt="enter image description here" title="Operation History Demo2 part1"><br>
-4). Export the operation history as a recipe (<a href="https://drive.google.com/open?id=1TKVte-JiNCXJOu1QC6n32bj8Mwg5t3u7">R</a>) via copy and paste to a file.<br>
-5). Export the project as archive <a href="https://drive.google.com/open?id=1UvHgpBUplqr-rh-R7UL6IHxiiAHXYHxh">A2</a>.<br>
+<img src="https://lh3.googleusercontent.com/6b8Gz-O9-yFQGuM61OegZm2jpZR-7BK_UT6zaOHwgyHfKF2hXX9yQREvQRu795ETc5lppH838NPH=s8000" alt="enter image description here" title="demo2 part1 OH"><br>
+4). Export the operation history as a recipe R via copy and paste to a file.</p>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column id using expression value.toNumber()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"id"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toNumber()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column sponsor using expression value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"sponsor"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column event using expression value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"event"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/text-transform"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Text transform on cells in column venue using expression value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"venue"</span><span class="token punctuation">,</span>
+    <span class="token string">"expression"</span><span class="token punctuation">:</span> <span class="token string">"value.toLowercase()"</span><span class="token punctuation">,</span>
+    <span class="token string">"onError"</span><span class="token punctuation">:</span> <span class="token string">"keep-original"</span><span class="token punctuation">,</span>
+    <span class="token string">"repeat"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"repeatCount"</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"op"</span><span class="token punctuation">:</span> <span class="token string">"core/column-split"</span><span class="token punctuation">,</span>
+    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Split column physical_description by separator"</span><span class="token punctuation">,</span>
+    <span class="token string">"engineConfig"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">"facets"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"row-based"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">"columnName"</span><span class="token punctuation">:</span> <span class="token string">"physical_description"</span><span class="token punctuation">,</span>
+    <span class="token string">"guessCellType"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">"removeOriginalColumn"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">"mode"</span><span class="token punctuation">:</span> <span class="token string">"separator"</span><span class="token punctuation">,</span>
+    <span class="token string">"separator"</span><span class="token punctuation">:</span> <span class="token string">";"</span><span class="token punctuation">,</span>
+    <span class="token string">"regex"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">"maxColumns"</span><span class="token punctuation">:</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+
+</code></pre>
+<p>5). Export the project as archive A2.<br>
 6). Run <strong>Complete-History-Extractor</strong> script with A2 as input, and get as output JSON file representing the extended recipe (<a href="https://drive.google.com/open?id=12SrTmNmRQUTpQi0g8emeMZzuj8l5HmvQ">ER</a>) associated with A2.<br>
 7). Show that R and ER differ (using jsondiff), where the differences correspond exactly to non-generalizable operations which are not represented in R, but are represented in ER.</p>
-<pre><code>screen Diff_OH_ER.log
-</code></pre>
-<p>Get a <a href="https://drive.google.com/open?id=1XvTEEpICJE1bdyaRkCup2RbQTTfZzzWZ">log</a> file:</p>
-<pre><code>Script started on Mon Apr 29 15:33:05 2019 
-[?1034hbash-3.2$ df [Kiff  [Kjson  [Kdiff demo2_part1_OH.json demo2_part1_ [K_ER.. [Kjson &gt;&gt; Diff_OH_ER.txt 
-bash-3.2$ exit 
-exit 
-Script done on Mon Apr 29 15:33:39 2019
-</code></pre>
-<p>The differences between R and ER recorded in <a href="https://drive.google.com/open?id=1uEK84O_Uooz1SvIdzOV4F04GC2ZoX45l">Diff_OH_ER.txt</a> :</p>
-<pre><code>{"$insert": [[8, {"cell": "3", "new": "{\"v\":\"middag/dinner\"}", "row": "8643", "old": "{\"v\":\"middag-dinner\"}", "op": "custom/single-edit"}]]}
-</code></pre>
 <p>ER has extract information about the <strong>single-edit</strong>.<br>
 8). Exported the cleaned data set (<a href="https://drive.google.com/open?id=17MIkIfqPzYzGqI74uZffvsQ9_0PjnuRe">C1</a>).</p>
 <p>Part 2:<br>
