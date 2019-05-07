@@ -32,7 +32,7 @@ Users can undo or redo some data cleaning steps by simply click on the steps the
 <img src="https://lh3.googleusercontent.com/3MdbpsvGT3yOfqP2RmBk_Id2g0I5s9uESa-g5VVaiGIctw36cthqNUOkglbBSc4lz0gzow3uoQZJ=s8000" alt="enter image description here" title="operations choose OR"><br>
 2). Perform a few data cleaning operations, both generalizable and non-generalizable.<br>
 Here there are 6 steps in all recorded in the <strong>Undo/Redo</strong> operation history sidebar.<br>
-<img src="https://lh3.googleusercontent.com/s3KDyv_mM1VK43xoB-IJiy3EnWxbWTYkRMdaz-naA_myIGek2m2vqujPPVr-TyhF19BTrpG7iN2R=s8000" alt="enter image description here" title="demo0_part1_operations"></li>
+<img src="https://lh3.googleusercontent.com/tNyZfTed6Hmct84Fh5t9IGZXmybBIv6sKFVymxbmjQ9kCgyvScdSwRBjZ4n3v7xXxoi3MDgxYQky=s8000" alt="enter image description here" title="demo0 part1 operations"></li>
 </ul>
 <p>3). View the operation <strong>history</strong>(H1)<br>
 <img src="https://lh3.googleusercontent.com/VRjrxEMg6JbuI7BNf-SeNqKka6wC4Plih8_9dQdYAqWTg1UZ0rAhjFCZ-Cm0XUd1R05grC5Kr9SY=s1000" alt="enter image description here" title="demo0_part1_OH"><br>
