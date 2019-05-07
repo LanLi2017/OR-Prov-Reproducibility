@@ -1,4 +1,4 @@
-from openrefine_client.google.refine import refine
+from google.refine import refine
 
 def run_history(input_file,project_name,recipe,output_file=None,metadata=None,refine_server_url="http://127.0.0.1:3333"):
     """
@@ -181,9 +181,9 @@ def compare_files(file1,file2):
         n_diff+=1
 
     if n_diff==0:
-        print file1,"and",file2,"are totally the same"
+        print "found no differences between ",file1,"and",file2
     else:
-        print "found",n_diff,"differences between",file1,"and",file2
+        print "found differences between",file1,"and",file2
 
     return n_diff
 
