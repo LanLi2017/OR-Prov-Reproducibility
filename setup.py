@@ -3,23 +3,21 @@ from setuptools import setup
 # read the contents of your README file
 from os import path
 this_directory = path.abspath(path.dirname(__file__))
-with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+with open(path.join(this_directory, 'README.md'), 'r') as f:
     long_description = f.read()
 
 setup(
-  name = 'orcli',
-  packages = ['orcli'],
-  version = '0.0.1',
+  name = 'orprov-cli',
+  packages = ['orprov','google','google.refine'],
+  version = '0.0.5',
   description = 'Open Refine Command Line Interface for Provenance Demo',
   long_description=long_description,
   long_description_content_type='text/markdown',
-  url = 'https://github.com/LanLi2017/OR2YWTool',
+  url = 'https://github.com/nikolausn/OR-Prov-Reproducibility',
   author = "Lan,Li; Parulian, Nikolaus; Ludaescher Bertram",
-  package_data={'or2ywtool': ['yesworkflow-0.2.2.0-SNAPSHOT-jar-with-dependencies.jar','yw.properties']},
+  package_data={'orcli': []},
   include_package_data=True,
-  install_requires=[
-	'networkx',
-  ],
+  install_requires=['urllib2_file','jsondiff'],
   classifiers=[  # Optional
     # How mature is this project? Common values are
     #   3 - Alpha
@@ -36,14 +34,12 @@ setup(
 
     # Specify the Python versions you support here. In particular, ensure
     # that you indicate whether you support Python 2, Python 3 or both.
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.4',
-    'Programming Language :: Python :: 3.5',
-    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 2',
+    'Programming Language :: Python :: 2.7'
   ],
   entry_points={
         'console_scripts': [
-            'or2yw = or2ywtool.__main__:run'
+            'orprov-cli = orprov.__main__:run'
         ],
     }
 )
